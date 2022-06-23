@@ -1,0 +1,356 @@
+Line 182: Class PRJFW_EDIT.TxtEdit of control TXT_NUMEROMOVIMENTI_INTRA was not a loaded control class.
+Line 235: Class PRJFW_EDITM.TXT_EDITM of control TXT_CAUSALE_INTRA was not a loaded control class.
+Line 253: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATADOC was not a loaded control class.
+Line 265: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATAREG_INTRA was not a loaded control class.
+Line 277: Class PRJFW_EDIT.TxtEdit of control TXT_NUMDOCORIG was not a loaded control class.
+Line 354: Class PRJFW_EDIT.TxtEdit of control TXT_DITTA_INTRA was not a loaded control class.
+Line 370: Class PRJFW_EDIT.TxtEdit of control TXT_NUMDOC was not a loaded control class.
+Line 383: Class PRJFW_EDITNUM.TxtEditNum of control TXT_TOTALE_INTRA was not a loaded control class.
+Line 395: Class PRJFW_EDIT.TxtEdit of control TXT_CLIFOR was not a loaded control class.
+Line 418: Class PRJFW_COMBOBOX.TMS_COMBO of control CBO_SEGNOCLIFOR was not a loaded control class.
+Line 440: Class PRJFW_EDITM.TXT_EDITM of control TXT_ALIQUOTA1 was not a loaded control class.
+Line 458: Class PRJFW_EDITDEFCONTO.TxtEditDefConto of control TXT_CONTO1_INTRA was not a loaded control class.
+Line 470: Class PRJFW_EDITDEFCONTO.TxtEditDefConto of control TXT_CONTOIVA was not a loaded control class.
+Line 482: Class PRJFW_EDITNUM.TxtEditNum of control TXT_IMPONIBILE1 was not a loaded control class.
+Line 495: Class PRJFW_COMBOBOX.TMS_COMBO of control CBO_SEGNOIVA was not a loaded control class.
+Line 565: Class PRJFW_EDITNUM.TxtEditNum of control TXT_IMPORTOIVA was not a loaded control class.
+Line 604: Class PRJFW_EDITNUM.TxtEditNum of control TXT_IMPOSTA1 was not a loaded control class.
+Line 625: Class PRJFW_COMBOBOX.TMS_COMBO of control CBO_SEGNO1_INTRA was not a loaded control class.
+Line 657: Class PRJFW_EDITM.TXT_EDITM of control TXT_SEZAUTO was not a loaded control class.
+Line 691: Class PRJFW_EDIT.TxtEdit of control TXT_NUMDOCAUTO was not a loaded control class.
+Line 745: Class PRJFW_EDIT.TxtEdit of control TXT_NUMREG_QUERY was not a loaded control class.
+Line 760: Class PRJFW_EDIT.TxtEdit of control TXT_NUMITER_QUERY was not a loaded control class.
+Line 817: Class PRJFW_EDITM.TXT_EDITM of control TXT_CAUSALE was not a loaded control class.
+Line 835: Class PRJFW_EDITNUM.TxtEditNum of control TXT_TOTALE was not a loaded control class.
+Line 848: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATARATEOPREC was not a loaded control class.
+Line 868: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATARATEOCORR was not a loaded control class.
+Line 888: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATAREG was not a loaded control class.
+Line 900: Class PRJFW_EDIT.TxtEdit of control TXT_DESCRAGGTEST was not a loaded control class.
+Line 915: Class PRJFW_EDIT.TxtEdit of control TXT_DITTA was not a loaded control class.
+Line 996: Class PRJFW_EDITDEFCONTO.TxtEditDefConto of control TXT_CONTO1 was not a loaded control class.
+Line 1009: Class PRJFW_EDITDEFCONTO.TxtEditDefConto of control TXT_CONTO2 was not a loaded control class.
+Line 1022: Class PRJFW_COMBOBOX.TMS_COMBO of control CBO_SEGNO2 was not a loaded control class.
+Line 1035: Class PRJFW_COMBOBOX.TMS_COMBO of control CBO_SEGNO1 was not a loaded control class.
+Line 1048: Class PRJFW_EDIT.TxtEdit of control TXT_DESCRAGG2 was not a loaded control class.
+Line 1063: Class PRJFW_EDIT.TxtEdit of control TXT_DESCRAGG1 was not a loaded control class.
+Line 1086: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATAFINCOMP1 was not a loaded control class.
+Line 1106: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATAINICOMP1 was not a loaded control class.
+Line 1118: Class PRJFW_EDIT.TxtEdit of control TXT_DESCRCONTO1 was not a loaded control class.
+Line 1134: Class PRJFW_EDIT.TxtEdit of control TXT_DESCRCONTO2 was not a loaded control class.
+Line 1150: Class PRJFW_EDITNUM.TxtEditNum of control TXT_IMPORTO2 was not a loaded control class.
+Line 1163: Class PRJFW_EDITNUM.TxtEditNum of control TXT_IMPORTO1 was not a loaded control class.
+Line 1328: Class PRJFW_EDIT.TxtEdit of control TXT_NUMEROMOVIMENTI was not a loaded control class.
+Line 1381: Class PRJFW_EDIT.TxtEdit of control TXT_NUM_COPPIE_D_A was not a loaded control class.
+Line 1395: Class PRJFW_EDIT.TxtEdit of control TXT_PROG was not a loaded control class.
+Line 1419: Class PRJFW_EDIT.TxtEdit of control TXT_NUMREG_INTRA was not a loaded control class.
+Line 1435: Class PRJFW_EDIT.TxtEdit of control TXT_NUMREG was not a loaded control class.
+Line 188: The property name _ExtentX in TXT_NUMEROMOVIMENTI_INTRA is invalid.
+Line 189: The property name _ExtentY in TXT_NUMEROMOVIMENTI_INTRA is invalid.
+Line 190: The property name Numerico in TXT_NUMEROMOVIMENTI_INTRA is invalid.
+Line 191: The property name Carattere in TXT_NUMEROMOVIMENTI_INTRA is invalid.
+Line 192: The property name IsDbField in TXT_NUMEROMOVIMENTI_INTRA is invalid.
+Line 193: The property name CanRequired in TXT_NUMEROMOVIMENTI_INTRA is invalid.
+Line 241: The property name _ExtentX in TXT_CAUSALE_INTRA is invalid.
+Line 242: The property name _ExtentY in TXT_CAUSALE_INTRA is invalid.
+Line 243: The property name IsLookup in TXT_CAUSALE_INTRA is invalid.
+Line 244: The property name DisplayFormat in TXT_CAUSALE_INTRA is invalid.
+Line 245: The property name MaxChar in TXT_CAUSALE_INTRA is invalid.
+Line 246: The property name Numerico in TXT_CAUSALE_INTRA is invalid.
+Line 247: The property name Carattere in TXT_CAUSALE_INTRA is invalid.
+Line 248: The property name IsDbField in TXT_CAUSALE_INTRA is invalid.
+Line 249: The property name NumRighe in TXT_CAUSALE_INTRA is invalid.
+Line 250: The property name MaxWidth in TXT_CAUSALE_INTRA is invalid.
+Line 251: The property name CanRequired in TXT_CAUSALE_INTRA is invalid.
+Line 259: The property name _ExtentX in TXT_DATADOC is invalid.
+Line 260: The property name _ExtentY in TXT_DATADOC is invalid.
+Line 261: The property name IsCalendario in TXT_DATADOC is invalid.
+Line 262: The property name IsDbField in TXT_DATADOC is invalid.
+Line 263: The property name CanRequired in TXT_DATADOC is invalid.
+Line 271: The property name _ExtentX in TXT_DATAREG_INTRA is invalid.
+Line 272: The property name _ExtentY in TXT_DATAREG_INTRA is invalid.
+Line 273: The property name IsCalendario in TXT_DATAREG_INTRA is invalid.
+Line 274: The property name IsDbField in TXT_DATAREG_INTRA is invalid.
+Line 275: The property name CanRequired in TXT_DATAREG_INTRA is invalid.
+Line 283: The property name _ExtentX in TXT_NUMDOCORIG is invalid.
+Line 284: The property name _ExtentY in TXT_NUMDOCORIG is invalid.
+Line 285: The property name Numerico in TXT_NUMDOCORIG is invalid.
+Line 286: The property name Carattere in TXT_NUMDOCORIG is invalid.
+Line 287: The property name IsDbField in TXT_NUMDOCORIG is invalid.
+Line 288: The property name CanRequired in TXT_NUMDOCORIG is invalid.
+Line 360: The property name _ExtentX in TXT_DITTA_INTRA is invalid.
+Line 361: The property name _ExtentY in TXT_DITTA_INTRA is invalid.
+Line 363: The property name MaxChar in TXT_DITTA_INTRA is invalid.
+Line 364: The property name Numerico in TXT_DITTA_INTRA is invalid.
+Line 365: The property name Carattere in TXT_DITTA_INTRA is invalid.
+Line 366: The property name IsDbField in TXT_DITTA_INTRA is invalid.
+Line 367: The property name MaxWidth in TXT_DITTA_INTRA is invalid.
+Line 368: The property name CanRequired in TXT_DITTA_INTRA is invalid.
+Line 376: The property name _ExtentX in TXT_NUMDOC is invalid.
+Line 377: The property name _ExtentY in TXT_NUMDOC is invalid.
+Line 378: The property name Numerico in TXT_NUMDOC is invalid.
+Line 379: The property name Carattere in TXT_NUMDOC is invalid.
+Line 380: The property name IsDbField in TXT_NUMDOC is invalid.
+Line 381: The property name CanRequired in TXT_NUMDOC is invalid.
+Line 389: The property name _ExtentX in TXT_TOTALE_INTRA is invalid.
+Line 390: The property name _ExtentY in TXT_TOTALE_INTRA is invalid.
+Line 391: The property name IsDbField in TXT_TOTALE_INTRA is invalid.
+Line 392: The property name MaxChar in TXT_TOTALE_INTRA is invalid.
+Line 393: The property name CanRequired in TXT_TOTALE_INTRA is invalid.
+Line 401: The property name _ExtentX in TXT_CLIFOR is invalid.
+Line 402: The property name _ExtentY in TXT_CLIFOR is invalid.
+Line 403: The property name MaxChar in TXT_CLIFOR is invalid.
+Line 404: The property name Numerico in TXT_CLIFOR is invalid.
+Line 405: The property name Carattere in TXT_CLIFOR is invalid.
+Line 406: The property name IsDbField in TXT_CLIFOR is invalid.
+Line 407: The property name MaxWidth in TXT_CLIFOR is invalid.
+Line 408: The property name CanRequired in TXT_CLIFOR is invalid.
+Line 424: The property name _ExtentX in CBO_SEGNOCLIFOR is invalid.
+Line 425: The property name _ExtentY in CBO_SEGNOCLIFOR is invalid.
+Line 427: The property name MaxChar in CBO_SEGNOCLIFOR is invalid.
+Line 428: The property name IsDbField in CBO_SEGNOCLIFOR is invalid.
+Line 429: The property name DbCol in CBO_SEGNOCLIFOR is invalid.
+Line 430: The property name CanRequired in CBO_SEGNOCLIFOR is invalid.
+Line 446: The property name _ExtentX in TXT_ALIQUOTA1 is invalid.
+Line 447: The property name _ExtentY in TXT_ALIQUOTA1 is invalid.
+Line 448: The property name IsLookup in TXT_ALIQUOTA1 is invalid.
+Line 449: The property name DisplayFormat in TXT_ALIQUOTA1 is invalid.
+Line 450: The property name MaxChar in TXT_ALIQUOTA1 is invalid.
+Line 451: The property name Numerico in TXT_ALIQUOTA1 is invalid.
+Line 452: The property name Carattere in TXT_ALIQUOTA1 is invalid.
+Line 453: The property name IsDbField in TXT_ALIQUOTA1 is invalid.
+Line 454: The property name NumRighe in TXT_ALIQUOTA1 is invalid.
+Line 455: The property name MaxWidth in TXT_ALIQUOTA1 is invalid.
+Line 456: The property name CanRequired in TXT_ALIQUOTA1 is invalid.
+Line 464: The property name _ExtentX in TXT_CONTO1_INTRA is invalid.
+Line 465: The property name _ExtentY in TXT_CONTO1_INTRA is invalid.
+Line 466: The property name IsLookup in TXT_CONTO1_INTRA is invalid.
+Line 467: The property name IsDbField in TXT_CONTO1_INTRA is invalid.
+Line 468: The property name CanRequired in TXT_CONTO1_INTRA is invalid.
+Line 476: The property name _ExtentX in TXT_CONTOIVA is invalid.
+Line 477: The property name _ExtentY in TXT_CONTOIVA is invalid.
+Line 478: The property name IsLookup in TXT_CONTOIVA is invalid.
+Line 479: The property name IsDbField in TXT_CONTOIVA is invalid.
+Line 480: The property name CanRequired in TXT_CONTOIVA is invalid.
+Line 488: The property name _ExtentX in TXT_IMPONIBILE1 is invalid.
+Line 489: The property name _ExtentY in TXT_IMPONIBILE1 is invalid.
+Line 490: The property name IsDbField in TXT_IMPONIBILE1 is invalid.
+Line 491: The property name MaxWidth in TXT_IMPONIBILE1 is invalid.
+Line 492: The property name MaxChar in TXT_IMPONIBILE1 is invalid.
+Line 493: The property name CanRequired in TXT_IMPONIBILE1 is invalid.
+Line 501: The property name _ExtentX in CBO_SEGNOIVA is invalid.
+Line 502: The property name _ExtentY in CBO_SEGNOIVA is invalid.
+Line 504: The property name MaxChar in CBO_SEGNOIVA is invalid.
+Line 505: The property name IsDbField in CBO_SEGNOIVA is invalid.
+Line 506: The property name DbCol in CBO_SEGNOIVA is invalid.
+Line 507: The property name CanRequired in CBO_SEGNOIVA is invalid.
+Line 571: The property name _ExtentX in TXT_IMPORTOIVA is invalid.
+Line 572: The property name _ExtentY in TXT_IMPORTOIVA is invalid.
+Line 574: The property name IsDbField in TXT_IMPORTOIVA is invalid.
+Line 575: The property name MaxWidth in TXT_IMPORTOIVA is invalid.
+Line 576: The property name MaxChar in TXT_IMPORTOIVA is invalid.
+Line 577: The property name CanRequired in TXT_IMPORTOIVA is invalid.
+Line 610: The property name _ExtentX in TXT_IMPOSTA1 is invalid.
+Line 611: The property name _ExtentY in TXT_IMPOSTA1 is invalid.
+Line 612: The property name IsDbField in TXT_IMPOSTA1 is invalid.
+Line 613: The property name MaxWidth in TXT_IMPOSTA1 is invalid.
+Line 614: The property name MaxChar in TXT_IMPOSTA1 is invalid.
+Line 615: The property name CanRequired in TXT_IMPOSTA1 is invalid.
+Line 631: The property name _ExtentX in CBO_SEGNO1_INTRA is invalid.
+Line 632: The property name _ExtentY in CBO_SEGNO1_INTRA is invalid.
+Line 634: The property name MaxChar in CBO_SEGNO1_INTRA is invalid.
+Line 635: The property name IsDbField in CBO_SEGNO1_INTRA is invalid.
+Line 636: The property name DbCol in CBO_SEGNO1_INTRA is invalid.
+Line 637: The property name CanRequired in CBO_SEGNO1_INTRA is invalid.
+Line 663: The property name _ExtentX in TXT_SEZAUTO is invalid.
+Line 664: The property name _ExtentY in TXT_SEZAUTO is invalid.
+Line 665: The property name IsLookup in TXT_SEZAUTO is invalid.
+Line 666: The property name DisplayFormat in TXT_SEZAUTO is invalid.
+Line 667: The property name MaxChar in TXT_SEZAUTO is invalid.
+Line 668: The property name Numerico in TXT_SEZAUTO is invalid.
+Line 669: The property name Carattere in TXT_SEZAUTO is invalid.
+Line 670: The property name IsDbField in TXT_SEZAUTO is invalid.
+Line 671: The property name NumRighe in TXT_SEZAUTO is invalid.
+Line 672: The property name MaxWidth in TXT_SEZAUTO is invalid.
+Line 673: The property name CanRequired in TXT_SEZAUTO is invalid.
+Line 697: The property name _ExtentX in TXT_NUMDOCAUTO is invalid.
+Line 698: The property name _ExtentY in TXT_NUMDOCAUTO is invalid.
+Line 699: The property name Numerico in TXT_NUMDOCAUTO is invalid.
+Line 700: The property name Carattere in TXT_NUMDOCAUTO is invalid.
+Line 701: The property name IsDbField in TXT_NUMDOCAUTO is invalid.
+Line 702: The property name CanRequired in TXT_NUMDOCAUTO is invalid.
+Line 751: The property name _ExtentX in TXT_NUMREG_QUERY is invalid.
+Line 752: The property name _ExtentY in TXT_NUMREG_QUERY is invalid.
+Line 753: The property name MaxChar in TXT_NUMREG_QUERY is invalid.
+Line 754: The property name Numerico in TXT_NUMREG_QUERY is invalid.
+Line 755: The property name Carattere in TXT_NUMREG_QUERY is invalid.
+Line 756: The property name IsDbField in TXT_NUMREG_QUERY is invalid.
+Line 757: The property name MaxWidth in TXT_NUMREG_QUERY is invalid.
+Line 758: The property name CanRequired in TXT_NUMREG_QUERY is invalid.
+Line 766: The property name _ExtentX in TXT_NUMITER_QUERY is invalid.
+Line 767: The property name _ExtentY in TXT_NUMITER_QUERY is invalid.
+Line 768: The property name Numerico in TXT_NUMITER_QUERY is invalid.
+Line 769: The property name Carattere in TXT_NUMITER_QUERY is invalid.
+Line 770: The property name IsDbField in TXT_NUMITER_QUERY is invalid.
+Line 771: The property name CanRequired in TXT_NUMITER_QUERY is invalid.
+Line 823: The property name _ExtentX in TXT_CAUSALE is invalid.
+Line 824: The property name _ExtentY in TXT_CAUSALE is invalid.
+Line 825: The property name IsLookup in TXT_CAUSALE is invalid.
+Line 826: The property name DisplayFormat in TXT_CAUSALE is invalid.
+Line 827: The property name MaxChar in TXT_CAUSALE is invalid.
+Line 828: The property name Numerico in TXT_CAUSALE is invalid.
+Line 829: The property name Carattere in TXT_CAUSALE is invalid.
+Line 830: The property name IsDbField in TXT_CAUSALE is invalid.
+Line 831: The property name NumRighe in TXT_CAUSALE is invalid.
+Line 832: The property name MaxWidth in TXT_CAUSALE is invalid.
+Line 833: The property name CanRequired in TXT_CAUSALE is invalid.
+Line 841: The property name _ExtentX in TXT_TOTALE is invalid.
+Line 842: The property name _ExtentY in TXT_TOTALE is invalid.
+Line 843: The property name IsDbField in TXT_TOTALE is invalid.
+Line 844: The property name MaxWidth in TXT_TOTALE is invalid.
+Line 845: The property name MaxChar in TXT_TOTALE is invalid.
+Line 846: The property name CanRequired in TXT_TOTALE is invalid.
+Line 854: The property name _ExtentX in TXT_DATARATEOPREC is invalid.
+Line 855: The property name _ExtentY in TXT_DATARATEOPREC is invalid.
+Line 856: The property name IsCalendario in TXT_DATARATEOPREC is invalid.
+Line 857: The property name IsDbField in TXT_DATARATEOPREC is invalid.
+Line 858: The property name CanRequired in TXT_DATARATEOPREC is invalid.
+Line 874: The property name _ExtentX in TXT_DATARATEOCORR is invalid.
+Line 875: The property name _ExtentY in TXT_DATARATEOCORR is invalid.
+Line 876: The property name IsCalendario in TXT_DATARATEOCORR is invalid.
+Line 877: The property name IsDbField in TXT_DATARATEOCORR is invalid.
+Line 878: The property name CanRequired in TXT_DATARATEOCORR is invalid.
+Line 894: The property name _ExtentX in TXT_DATAREG is invalid.
+Line 895: The property name _ExtentY in TXT_DATAREG is invalid.
+Line 896: The property name IsCalendario in TXT_DATAREG is invalid.
+Line 897: The property name IsDbField in TXT_DATAREG is invalid.
+Line 898: The property name CanRequired in TXT_DATAREG is invalid.
+Line 906: The property name _ExtentX in TXT_DESCRAGGTEST is invalid.
+Line 907: The property name _ExtentY in TXT_DESCRAGGTEST is invalid.
+Line 908: The property name MaxChar in TXT_DESCRAGGTEST is invalid.
+Line 909: The property name Numerico in TXT_DESCRAGGTEST is invalid.
+Line 910: The property name Carattere in TXT_DESCRAGGTEST is invalid.
+Line 911: The property name IsDbField in TXT_DESCRAGGTEST is invalid.
+Line 912: The property name MaxWidth in TXT_DESCRAGGTEST is invalid.
+Line 913: The property name CanRequired in TXT_DESCRAGGTEST is invalid.
+Line 921: The property name _ExtentX in TXT_DITTA is invalid.
+Line 922: The property name _ExtentY in TXT_DITTA is invalid.
+Line 924: The property name MaxChar in TXT_DITTA is invalid.
+Line 925: The property name Numerico in TXT_DITTA is invalid.
+Line 926: The property name Carattere in TXT_DITTA is invalid.
+Line 927: The property name IsDbField in TXT_DITTA is invalid.
+Line 928: The property name MaxWidth in TXT_DITTA is invalid.
+Line 929: The property name CanRequired in TXT_DITTA is invalid.
+Line 1002: The property name _ExtentX in TXT_CONTO1 is invalid.
+Line 1003: The property name _ExtentY in TXT_CONTO1 is invalid.
+Line 1004: The property name IsLookup in TXT_CONTO1 is invalid.
+Line 1005: The property name IsDbField in TXT_CONTO1 is invalid.
+Line 1006: The property name IsDecode in TXT_CONTO1 is invalid.
+Line 1007: The property name CanRequired in TXT_CONTO1 is invalid.
+Line 1015: The property name _ExtentX in TXT_CONTO2 is invalid.
+Line 1016: The property name _ExtentY in TXT_CONTO2 is invalid.
+Line 1017: The property name IsLookup in TXT_CONTO2 is invalid.
+Line 1018: The property name IsDbField in TXT_CONTO2 is invalid.
+Line 1019: The property name IsDecode in TXT_CONTO2 is invalid.
+Line 1020: The property name CanRequired in TXT_CONTO2 is invalid.
+Line 1028: The property name _ExtentX in CBO_SEGNO2 is invalid.
+Line 1029: The property name _ExtentY in CBO_SEGNO2 is invalid.
+Line 1030: The property name MaxChar in CBO_SEGNO2 is invalid.
+Line 1031: The property name IsDbField in CBO_SEGNO2 is invalid.
+Line 1032: The property name DbCol in CBO_SEGNO2 is invalid.
+Line 1033: The property name CanRequired in CBO_SEGNO2 is invalid.
+Line 1041: The property name _ExtentX in CBO_SEGNO1 is invalid.
+Line 1042: The property name _ExtentY in CBO_SEGNO1 is invalid.
+Line 1043: The property name MaxChar in CBO_SEGNO1 is invalid.
+Line 1044: The property name IsDbField in CBO_SEGNO1 is invalid.
+Line 1045: The property name DbCol in CBO_SEGNO1 is invalid.
+Line 1046: The property name CanRequired in CBO_SEGNO1 is invalid.
+Line 1054: The property name _ExtentX in TXT_DESCRAGG2 is invalid.
+Line 1055: The property name _ExtentY in TXT_DESCRAGG2 is invalid.
+Line 1056: The property name MaxChar in TXT_DESCRAGG2 is invalid.
+Line 1057: The property name Numerico in TXT_DESCRAGG2 is invalid.
+Line 1058: The property name Carattere in TXT_DESCRAGG2 is invalid.
+Line 1059: The property name IsDbField in TXT_DESCRAGG2 is invalid.
+Line 1060: The property name MaxWidth in TXT_DESCRAGG2 is invalid.
+Line 1061: The property name CanRequired in TXT_DESCRAGG2 is invalid.
+Line 1069: The property name _ExtentX in TXT_DESCRAGG1 is invalid.
+Line 1070: The property name _ExtentY in TXT_DESCRAGG1 is invalid.
+Line 1071: The property name MaxChar in TXT_DESCRAGG1 is invalid.
+Line 1072: The property name Numerico in TXT_DESCRAGG1 is invalid.
+Line 1073: The property name Carattere in TXT_DESCRAGG1 is invalid.
+Line 1074: The property name IsDbField in TXT_DESCRAGG1 is invalid.
+Line 1075: The property name MaxWidth in TXT_DESCRAGG1 is invalid.
+Line 1076: The property name CanRequired in TXT_DESCRAGG1 is invalid.
+Line 1092: The property name _ExtentX in TXT_DATAFINCOMP1 is invalid.
+Line 1093: The property name _ExtentY in TXT_DATAFINCOMP1 is invalid.
+Line 1094: The property name IsCalendario in TXT_DATAFINCOMP1 is invalid.
+Line 1095: The property name IsDbField in TXT_DATAFINCOMP1 is invalid.
+Line 1096: The property name CanRequired in TXT_DATAFINCOMP1 is invalid.
+Line 1112: The property name _ExtentX in TXT_DATAINICOMP1 is invalid.
+Line 1113: The property name _ExtentY in TXT_DATAINICOMP1 is invalid.
+Line 1114: The property name IsCalendario in TXT_DATAINICOMP1 is invalid.
+Line 1115: The property name IsDbField in TXT_DATAINICOMP1 is invalid.
+Line 1116: The property name CanRequired in TXT_DATAINICOMP1 is invalid.
+Line 1124: The property name _ExtentX in TXT_DESCRCONTO1 is invalid.
+Line 1125: The property name _ExtentY in TXT_DESCRCONTO1 is invalid.
+Line 1127: The property name MaxChar in TXT_DESCRCONTO1 is invalid.
+Line 1128: The property name Numerico in TXT_DESCRCONTO1 is invalid.
+Line 1129: The property name Carattere in TXT_DESCRCONTO1 is invalid.
+Line 1130: The property name IsDbField in TXT_DESCRCONTO1 is invalid.
+Line 1131: The property name MaxWidth in TXT_DESCRCONTO1 is invalid.
+Line 1132: The property name CanRequired in TXT_DESCRCONTO1 is invalid.
+Line 1140: The property name _ExtentX in TXT_DESCRCONTO2 is invalid.
+Line 1141: The property name _ExtentY in TXT_DESCRCONTO2 is invalid.
+Line 1143: The property name MaxChar in TXT_DESCRCONTO2 is invalid.
+Line 1144: The property name Numerico in TXT_DESCRCONTO2 is invalid.
+Line 1145: The property name Carattere in TXT_DESCRCONTO2 is invalid.
+Line 1146: The property name IsDbField in TXT_DESCRCONTO2 is invalid.
+Line 1147: The property name MaxWidth in TXT_DESCRCONTO2 is invalid.
+Line 1148: The property name CanRequired in TXT_DESCRCONTO2 is invalid.
+Line 1156: The property name _ExtentX in TXT_IMPORTO2 is invalid.
+Line 1157: The property name _ExtentY in TXT_IMPORTO2 is invalid.
+Line 1158: The property name IsDbField in TXT_IMPORTO2 is invalid.
+Line 1159: The property name MaxWidth in TXT_IMPORTO2 is invalid.
+Line 1160: The property name MaxChar in TXT_IMPORTO2 is invalid.
+Line 1161: The property name CanRequired in TXT_IMPORTO2 is invalid.
+Line 1169: The property name _ExtentX in TXT_IMPORTO1 is invalid.
+Line 1170: The property name _ExtentY in TXT_IMPORTO1 is invalid.
+Line 1171: The property name IsDbField in TXT_IMPORTO1 is invalid.
+Line 1172: The property name MaxWidth in TXT_IMPORTO1 is invalid.
+Line 1173: The property name MaxChar in TXT_IMPORTO1 is invalid.
+Line 1174: The property name CanRequired in TXT_IMPORTO1 is invalid.
+Line 1334: The property name _ExtentX in TXT_NUMEROMOVIMENTI is invalid.
+Line 1335: The property name _ExtentY in TXT_NUMEROMOVIMENTI is invalid.
+Line 1336: The property name Numerico in TXT_NUMEROMOVIMENTI is invalid.
+Line 1337: The property name Carattere in TXT_NUMEROMOVIMENTI is invalid.
+Line 1338: The property name IsDbField in TXT_NUMEROMOVIMENTI is invalid.
+Line 1339: The property name CanRequired in TXT_NUMEROMOVIMENTI is invalid.
+Line 1387: The property name _ExtentX in TXT_NUM_COPPIE_D_A is invalid.
+Line 1388: The property name _ExtentY in TXT_NUM_COPPIE_D_A is invalid.
+Line 1389: The property name Numerico in TXT_NUM_COPPIE_D_A is invalid.
+Line 1390: The property name Carattere in TXT_NUM_COPPIE_D_A is invalid.
+Line 1391: The property name IsDbField in TXT_NUM_COPPIE_D_A is invalid.
+Line 1392: The property name CanRequired in TXT_NUM_COPPIE_D_A is invalid.
+Line 1401: The property name _ExtentX in TXT_PROG is invalid.
+Line 1402: The property name _ExtentY in TXT_PROG is invalid.
+Line 1404: The property name MaxChar in TXT_PROG is invalid.
+Line 1405: The property name Numerico in TXT_PROG is invalid.
+Line 1406: The property name Carattere in TXT_PROG is invalid.
+Line 1407: The property name IsDbField in TXT_PROG is invalid.
+Line 1408: The property name MaxWidth in TXT_PROG is invalid.
+Line 1409: The property name CanRequired in TXT_PROG is invalid.
+Line 1425: The property name _ExtentX in TXT_NUMREG_INTRA is invalid.
+Line 1426: The property name _ExtentY in TXT_NUMREG_INTRA is invalid.
+Line 1428: The property name MaxChar in TXT_NUMREG_INTRA is invalid.
+Line 1429: The property name Numerico in TXT_NUMREG_INTRA is invalid.
+Line 1430: The property name Carattere in TXT_NUMREG_INTRA is invalid.
+Line 1431: The property name IsDbField in TXT_NUMREG_INTRA is invalid.
+Line 1432: The property name MaxWidth in TXT_NUMREG_INTRA is invalid.
+Line 1433: The property name CanRequired in TXT_NUMREG_INTRA is invalid.
+Line 1441: The property name _ExtentX in TXT_NUMREG is invalid.
+Line 1442: The property name _ExtentY in TXT_NUMREG is invalid.
+Line 1444: The property name MaxChar in TXT_NUMREG is invalid.
+Line 1445: The property name Numerico in TXT_NUMREG is invalid.
+Line 1446: The property name Carattere in TXT_NUMREG is invalid.
+Line 1447: The property name IsDbField in TXT_NUMREG is invalid.
+Line 1448: The property name MaxWidth in TXT_NUMREG is invalid.
+Line 1449: The property name CanRequired in TXT_NUMREG is invalid.

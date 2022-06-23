@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <DBALY>
+    	<DBALY_Datasource>NB06\SQLSTD2016</DBALY_Datasource>
+    	<DBALY_Catalog>Fic</DBALY_Catalog>
+    	<DBALY_User>sa</DBALY_User>
+	<DBALY_Psw>9999</DBALY_Psw>
+  </DBALY>
+  <DBALYEUCO>
+    	<DBALYEUCO_Datasource>NB06\SQLSTD2016</DBALYEUCO_Datasource>
+    	<DBALYEUCO_Catalog>Alyeuco2</DBALYEUCO_Catalog>
+    	<DBALYEUCO_User>sa</DBALYEUCO_User>
+	<DBALYEUCO_Psw>9999</DBALYEUCO_Psw>
+  </DBALYEUCO>
+  <PARAMETER>
+  </PARAMETER>
+</config>

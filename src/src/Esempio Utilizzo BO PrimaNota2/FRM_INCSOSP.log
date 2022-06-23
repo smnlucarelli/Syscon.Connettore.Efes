@@ -1,0 +1,5 @@
+Line 63: Class PRJFW_EDIT.TxtEdit of control TXT_NUMREG_INCASSO was not a loaded control class.
+Line 79: Class PRJFW_EDITDATE.TxtEditDate of control TXT_DATAREG was not a loaded control class.
+Line 91: Class PRJFW_EDITNUM.TxtEditNum of control TXT_TOTALEINC was not a loaded control class.
+Line 103: Class PRJFW_EDIT.TxtEdit of control TXT_NUMREG_FATTURA was not a loaded control class.
+Line 118: Class PRJFW_EDIT.TxtEdit of control TXT_DITTA was not a loaded control class.

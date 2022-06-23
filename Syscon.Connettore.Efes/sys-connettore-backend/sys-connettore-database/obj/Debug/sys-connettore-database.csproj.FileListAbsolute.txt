@@ -1,0 +1,7 @@
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\bin\Debug\sys-connettore-database.exe.config
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\bin\Debug\sys-connettore-database.exe
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\bin\Debug\sys-connettore-database.pdb
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.csproj.AssemblyReference.cache
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.csproj.CoreCompileInputs.cache
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.exe
+C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.pdb
