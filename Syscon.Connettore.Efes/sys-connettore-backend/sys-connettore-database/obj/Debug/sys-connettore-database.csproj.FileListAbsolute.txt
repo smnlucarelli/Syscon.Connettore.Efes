@@ -5,3 +5,15 @@ C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\
 C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.csproj.CoreCompileInputs.cache
 C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.exe
 C:\Users\user06\Desktop\Code\Syscon.Connettore.Efes\sys-connettore-database\obj\Debug\sys-connettore-database.pdb
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\sys-connettore-database.exe.config
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\sys-connettore-database.exe
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\sys-connettore-database.pdb
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\EntityFramework.dll
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\EntityFramework.xml
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\obj\Debug\sys-connettore-database.csproj.CoreCompileInputs.cache
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\obj\Debug\sys-connettore-database.csproj.CopyComplete
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\obj\Debug\sys-connettore-database.exe
+C:\Users\user06\Desktop\Code\FIT\Syscon.Connettore.Efes\sys-connettore-backend\sys-connettore-database\obj\Debug\sys-connettore-database.pdb

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlyEfesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GFTA_CAUSALE">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GFTA_CAUSALEPREST">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GFTA_COMUNE">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GFTA_IVA">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GFTA_PAGAMENTO">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GFTA_PDC">
+    <Key>
+      <PropertyRef Name="CodiceGruppo" />
+      <PropertyRef Name="Conto" />
+      <PropertyRef Name="Descr" />
+    </Key>
+    <Property Name="CodiceGruppo" Type="Decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="Conto" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GFTA_STATOESTERO">
+    <Key>
+      <PropertyRef Name="Codice" />
+      <PropertyRef Name="TipoStato" />
+    </Key>
+    <Property Name="Codice" Type="Decimal" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="Descr" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceIso" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceValuta" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="TipoStato" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="DescrizioneValuta" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="SiglaValuta" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraSync" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GOAR_CLIFOR">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Ditta" />
+      <PropertyRef Name="Tipocf" />
+      <PropertyRef Name="Stato" />
+      <PropertyRef Name="Esito" />
+      <PropertyRef Name="FlgPrsFis" />
+      <PropertyRef Name="Sesso" />
+      <PropertyRef Name="IndSoggRit" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Elaborazione_1" Type="Guid" />
+    <Property Name="Ditta" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Tipocf" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Key_1" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="Stato" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Esito" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="PartIva" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="CodFiscale" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FlgPrsFis" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Cognome" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Nome" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sesso" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="DataNascita" Type="DateTime" Precision="3" />
+    <Property Name="ComNascita" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ProvNascita" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="CodiceComuneNasc" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="NazioneIsoNasc" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="CodPag" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="Tel1Num" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Tel2Num" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="FaxNum" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="CellNum" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="IndirizzoEmail" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="EmailPec" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="RagioneSociale" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceComune" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Citta" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Cap" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Prov" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="NazioneIso" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="RagSocFisc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceComuneFisc" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="IndFisc" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CittaFisc" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CapFisc" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="ProvFisc" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="NazioneIsoFisc" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="PartIvaEst" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="Aliva" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="IndSoggRit" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="CodiceCauPrest" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="IndTipoInstradamento" Type="Byte" />
+    <Property Name="CodDestSdi" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="IndStato" Type="Decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="GOCG_PRIMANOTA">
+    <Key>
+      <PropertyRef Name="Ditta" />
+      <PropertyRef Name="GoKey" />
+      <PropertyRef Name="Stato" />
+      <PropertyRef Name="Esito" />
+    </Key>
+    <Property Name="Ditta" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="GoKey" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Stato" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Esito" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="Operazione" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="ModReg" Type="String" MaxLength="31" FixedLength="false" Unicode="false" />
+    <Property Name="TipoRec" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="DataReg" Type="DateTime" Precision="3" />
+    <Property Name="DataDocOri" Type="DateTime" Precision="3" />
+    <Property Name="NumDocOri" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceCausale" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DescrizioneAggCode" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceValuta" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceConto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TipoCF" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="CodiceCliFor" Type="Int32" />
+    <Property Name="IndDareAvere" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="ImpOperEuro" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="NumReg" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="IndStato" Type="Decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="GOCM_DOCUMENTO">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CodPag" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Operazione" Type="Int64" />
+    <Property Name="Id_Operazione_Prog" Type="Int32" />
+    <Property Name="Id_Operazione_Rif" Type="Int64" />
+    <Property Name="Id_Elaborazione_1" Type="Guid" />
+    <Property Name="Id_Elaborazione_2" Type="Guid" />
+    <Property Name="Stato" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Esito" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Import" Type="Int32" />
+    <Property Name="Del" Type="Int32" />
+    <Property Name="Err" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Err_Note" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="Operazione" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Operazione_Mod" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Data_Insert" Type="DateTime" Precision="3" />
+    <Property Name="Data_Update" Type="DateTime" Precision="3" />
+    <Property Name="Ditta" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="Key_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Key_2" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="Key_Rif_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Key_Rif_2" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="TipoRec" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Riga" Type="Int32" />
+    <Property Name="CodDocumento" Type="String" MaxLength="104" FixedLength="false" Unicode="false" />
+    <Property Name="DataReg" Type="DateTime" Precision="3" />
+    <Property Name="DataDoc" Type="DateTime" Precision="3" />
+    <Property Name="CodSez" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="NumDoc" Type="Int32" />
+    <Property Name="NumDocOri" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TipoCF" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="CodCliFor" Type="Int32" />
+    <Property Name="CodPag" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodDeposito" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Aliva" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="CodCauPrestazione" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="DataDaCompetenzaTes" Type="DateTime" Precision="3" />
+    <Property Name="DataACompetenzaTes" Type="DateTime" Precision="3" />
+    <Property Name="DescrizioneAggCoGe" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="CodSdi" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="IndicatoreTipoRiga" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="CodArticolo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="DescrizioneArticolo" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="Um" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Qta" Type="Decimal" Precision="14" Scale="3" />
+    <Property Name="Prezzo" Type="Decimal" Precision="17" Scale="6" />
+    <Property Name="Sc1" Type="Decimal" Precision="6" Scale="3" />
+    <Property Name="Sc2" Type="Decimal" Precision="6" Scale="3" />
+    <Property Name="AlivaRiga" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="ContoContropartita" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FlgRitAcconto" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="FlgConIntegrativo" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="DataDaCompetenzaRiga" Type="DateTime" Precision="3" />
+    <Property Name="DataACompetenzaRiga" Type="DateTime" Precision="3" />
+    <Property Name="DataCompetenzaIva" Type="DateTime" Precision="3" />
+    <Property Name="IndStato" Type="Decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="GORP_RITENUTEP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Operazione" Type="Int64" />
+    <Property Name="Id_Operazione_Prog" Type="Int32" />
+    <Property Name="Id_Operazione_Rif" Type="Int64" />
+    <Property Name="Id_Elaborazione_1" Type="Guid" />
+    <Property Name="Id_Elaborazione_2" Type="Guid" />
+    <Property Name="Stato" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Esito" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Import" Type="Int32" />
+    <Property Name="Del" Type="Int32" />
+    <Property Name="Err" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Err_Note" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="Operazione" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Operazione_Mod" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Data_Insert" Type="DateTime" Precision="3" />
+    <Property Name="Data_Update" Type="DateTime" Precision="3" />
+    <Property Name="Key_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Key_2" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="Key_Rif_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Key_Rif_2" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="ProgFlusso" Type="Int32" />
+    <Property Name="TipoRec" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="Ditta" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="DataReg" Type="DateTime" Precision="3" />
+    <Property Name="NumDocOri" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DataDocOri" Type="DateTime" Precision="3" />
+    <Property Name="CodSez" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="NumDoc" Type="Int32" />
+    <Property Name="TipoPrest" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="CodiceCauPrest" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="CodFor" Type="Int32" />
+    <Property Name="CodTribRa" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="CodTribRp" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="TotDoc" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="TotIva" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="IndSegno" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="IndAssRa" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="ImportoCi" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoPrNs" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRa" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PercRa" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="ImportoRa" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoAlRi" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoEnCa" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoNsRa" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoFrRp" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRp" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PercRp" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PercRpCa" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="ImportoRpPe" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRpCa" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="AnnoComp770" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="CertRaSt" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="DataInAtt" Type="DateTime" Precision="3" />
+    <Property Name="DataFiAtt" Type="DateTime" Precision="3" />
+    <Property Name="PagTot" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="DataPag" Type="DateTime" Precision="3" />
+    <Property Name="MeseCompPag" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="AnnoCompPag" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="ImportoPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoAbb" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoCiPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoPrNsPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRaPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRaPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoAlRiPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoEnCaPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoNsRaPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoFrRpPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRpPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRpPePag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRpCaPag" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoCredImposta" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="MeseCompVersRa" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="AnnoCompVersRa" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="TipoVers" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="CodAbiVersRa" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="CodCabVersRa" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="SerieVersRa" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="QuietVersRa" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="CcPostaleVersRa" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="MeseCompVersRp" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="AnnoCompVersRp" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="TipoVersRp" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CodAbiVersRp" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="CodCabVersRp" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="SerieVersRp" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="QuietVersRp" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="CcPostaleVersRp" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="CertRaStPag" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="CertRpStPag" Type="Decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="VW_GFAR_CLIFOR">
+    <Key>
+      <PropertyRef Name="Ditta" />
+      <PropertyRef Name="TipoCF" />
+      <PropertyRef Name="GfKeyCF" />
+      <PropertyRef Name="FlgPrsFis" />
+      <PropertyRef Name="Sesso" />
+      <PropertyRef Name="IndSoggRit" />
+    </Key>
+    <Property Name="Ditta" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="TipoCF" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="GoKeyCF" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="GfKeyCF" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="CodiceEsportazione__CodiceEsportazione" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PartIva" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="CodFiscale" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FlgPrsFis" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Cognome" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Nome" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sesso" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="DataNascita" Type="DateTime" Precision="3" />
+    <Property Name="ComNascita" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ProvNascita" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="RagioneSociale" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceComune" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Cap" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Citta" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Prov" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="RagSocFisc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="IndFisc" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceComuneFisc" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="CapFisc" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="CittaFisc" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ProvFisc" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="IndSoggRit" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="CodiceCauPrest" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Tel1Num" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Tel2Num" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="FaxNum" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="CellNum" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="IndirizzoEmail" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="CodPag" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="AlyEfesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GFTA_CAUSALE" EntityType="Self.GFTA_CAUSALE" />
+    <EntitySet Name="GFTA_CAUSALEPREST" EntityType="Self.GFTA_CAUSALEPREST" />
+    <EntitySet Name="GFTA_COMUNE" EntityType="Self.GFTA_COMUNE" />
+    <EntitySet Name="GFTA_IVA" EntityType="Self.GFTA_IVA" />
+    <EntitySet Name="GFTA_PAGAMENTO" EntityType="Self.GFTA_PAGAMENTO" />
+    <EntitySet Name="GFTA_PDC" EntityType="Self.GFTA_PDC" />
+    <EntitySet Name="GFTA_STATOESTERO" EntityType="Self.GFTA_STATOESTERO" />
+    <EntitySet Name="GOAR_CLIFOR" EntityType="Self.GOAR_CLIFOR" />
+    <EntitySet Name="GOCG_PRIMANOTA" EntityType="Self.GOCG_PRIMANOTA" />
+    <EntitySet Name="GOCM_DOCUMENTO" EntityType="Self.GOCM_DOCUMENTO" />
+    <EntitySet Name="GORP_RITENUTEP" EntityType="Self.GORP_RITENUTEP" />
+    <EntitySet Name="VW_GFAR_CLIFOR" EntityType="Self.VW_GFAR_CLIFOR" />
+    <FunctionImport Name="SP_CreaRecord" />
+    <FunctionImport Name="SP_GFTA_CAUSALE" />
+    <FunctionImport Name="SP_GFTA_CAUSALEPREST" />
+    <FunctionImport Name="SP_GFTA_COMUNE" />
+    <FunctionImport Name="SP_GFTA_IVA" />
+    <FunctionImport Name="SP_GFTA_PAGAMENTO" />
+    <FunctionImport Name="SP_GFTA_PDC" />
+    <FunctionImport Name="SP_GFTA_STATOESTERO" />
+    <FunctionImport Name="zSP_CANCELLA_TABELLE_GF" />
+    <FunctionImport Name="zSP_GOCG_CliFor" />
+    <EntitySet Name="SYS_MENU" EntityType="AlyEfesModel.SYS_MENU" />
+    <EntitySet Name="SYS_PARAMETRI" EntityType="AlyEfesModel.SYS_PARAMETRI" />
+    <EntitySet Name="SYS_UTENTE" EntityType="AlyEfesModel.SYS_UTENTE" />
+  </EntityContainer>
+  <EntityType Name="SYS_MENU">
+    <Key>
+      <PropertyRef Name="SYS_ID" />
+    </Key>
+    <Property Name="SYS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SYS_AREA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SYS_APPLICAZIONE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_PARAMETRI">
+    <Key>
+      <PropertyRef Name="SYS_PARAMETRO" />
+    </Key>
+    <Property Name="SYS_PARAMETRO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SYS_VALORE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_UTENTE">
+    <Key>
+      <PropertyRef Name="SYS_USERNAME" />
+    </Key>
+    <Property Name="SYS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SYS_USERNAME" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="SYS_PASSWORD" Type="String" Nullable="false" MaxLength="77" FixedLength="false" Unicode="true" />
+    <Property Name="SYS_DESCRIZIONE" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="SYS_EMAIL" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="SYS_ADMIN" Type="Int32" Nullable="false" />
+    <Property Name="SYS_FLGATTIVO" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -17,6 +17,9 @@
         <EntityTypeShape EntityType="AlyEfesModel.GOCM_DOCUMENTO" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AlyEfesModel.GORP_RITENUTEP" Width="1.5" PointX="14.75" PointY="0.625" IsExpanded="true" />
         <EntityTypeShape EntityType="AlyEfesModel.VW_GFAR_CLIFOR" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlyEfesModel.SYS_MENU" Width="1.5" PointX="9.375" PointY="9.75" />
+        <EntityTypeShape EntityType="AlyEfesModel.SYS_PARAMETRI" Width="1.5" PointX="11.375" PointY="9.75" />
+        <EntityTypeShape EntityType="AlyEfesModel.SYS_UTENTE" Width="1.5" PointX="3.375" PointY="12.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

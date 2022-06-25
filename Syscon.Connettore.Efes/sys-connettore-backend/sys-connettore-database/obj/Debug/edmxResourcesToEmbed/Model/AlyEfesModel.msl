@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AlyEfesModelStoreContainer" CdmEntityContainer="AlyEfesEntities">
+    <EntitySetMapping Name="GFTA_CAUSALE">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_CAUSALE">
+        <MappingFragment StoreEntitySet="GFTA_CAUSALE">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFTA_CAUSALEPREST">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_CAUSALEPREST">
+        <MappingFragment StoreEntitySet="GFTA_CAUSALEPREST">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFTA_COMUNE">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_COMUNE">
+        <MappingFragment StoreEntitySet="GFTA_COMUNE">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFTA_IVA">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_IVA">
+        <MappingFragment StoreEntitySet="GFTA_IVA">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFTA_PAGAMENTO">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_PAGAMENTO">
+        <MappingFragment StoreEntitySet="GFTA_PAGAMENTO">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFTA_PDC">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_PDC">
+        <MappingFragment StoreEntitySet="GFTA_PDC">
+          <ScalarProperty Name="CodiceGruppo" ColumnName="CodiceGruppo" />
+          <ScalarProperty Name="Conto" ColumnName="Conto" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFTA_STATOESTERO">
+      <EntityTypeMapping TypeName="AlyEfesModel.GFTA_STATOESTERO">
+        <MappingFragment StoreEntitySet="GFTA_STATOESTERO">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="CodiceIso" ColumnName="CodiceIso" />
+          <ScalarProperty Name="CodiceValuta" ColumnName="CodiceValuta" />
+          <ScalarProperty Name="TipoStato" ColumnName="TipoStato" />
+          <ScalarProperty Name="DescrizioneValuta" ColumnName="DescrizioneValuta" />
+          <ScalarProperty Name="SiglaValuta" ColumnName="SiglaValuta" />
+          <ScalarProperty Name="DataOraSync" ColumnName="DataOraSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOAR_CLIFOR">
+      <EntityTypeMapping TypeName="AlyEfesModel.GOAR_CLIFOR">
+        <MappingFragment StoreEntitySet="GOAR_CLIFOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Id_Elaborazione_1" ColumnName="Id_Elaborazione_1" />
+          <ScalarProperty Name="Ditta" ColumnName="Ditta" />
+          <ScalarProperty Name="Tipocf" ColumnName="Tipocf" />
+          <ScalarProperty Name="Key_1" ColumnName="Key_1" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="Esito" ColumnName="Esito" />
+          <ScalarProperty Name="PartIva" ColumnName="PartIva" />
+          <ScalarProperty Name="CodFiscale" ColumnName="CodFiscale" />
+          <ScalarProperty Name="FlgPrsFis" ColumnName="FlgPrsFis" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Sesso" ColumnName="Sesso" />
+          <ScalarProperty Name="DataNascita" ColumnName="DataNascita" />
+          <ScalarProperty Name="ComNascita" ColumnName="ComNascita" />
+          <ScalarProperty Name="ProvNascita" ColumnName="ProvNascita" />
+          <ScalarProperty Name="CodiceComuneNasc" ColumnName="CodiceComuneNasc" />
+          <ScalarProperty Name="NazioneIsoNasc" ColumnName="NazioneIsoNasc" />
+          <ScalarProperty Name="CodPag" ColumnName="CodPag" />
+          <ScalarProperty Name="Tel1Num" ColumnName="Tel1Num" />
+          <ScalarProperty Name="Tel2Num" ColumnName="Tel2Num" />
+          <ScalarProperty Name="FaxNum" ColumnName="FaxNum" />
+          <ScalarProperty Name="CellNum" ColumnName="CellNum" />
+          <ScalarProperty Name="IndirizzoEmail" ColumnName="IndirizzoEmail" />
+          <ScalarProperty Name="EmailPec" ColumnName="EmailPec" />
+          <ScalarProperty Name="RagioneSociale" ColumnName="RagioneSociale" />
+          <ScalarProperty Name="CodiceComune" ColumnName="CodiceComune" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Prov" ColumnName="Prov" />
+          <ScalarProperty Name="NazioneIso" ColumnName="NazioneIso" />
+          <ScalarProperty Name="RagSocFisc" ColumnName="RagSocFisc" />
+          <ScalarProperty Name="CodiceComuneFisc" ColumnName="CodiceComuneFisc" />
+          <ScalarProperty Name="IndFisc" ColumnName="IndFisc" />
+          <ScalarProperty Name="CittaFisc" ColumnName="CittaFisc" />
+          <ScalarProperty Name="CapFisc" ColumnName="CapFisc" />
+          <ScalarProperty Name="ProvFisc" ColumnName="ProvFisc" />
+          <ScalarProperty Name="NazioneIsoFisc" ColumnName="NazioneIsoFisc" />
+          <ScalarProperty Name="PartIvaEst" ColumnName="PartIvaEst" />
+          <ScalarProperty Name="Aliva" ColumnName="Aliva" />
+          <ScalarProperty Name="IndSoggRit" ColumnName="IndSoggRit" />
+          <ScalarProperty Name="CodiceCauPrest" ColumnName="CodiceCauPrest" />
+          <ScalarProperty Name="IndTipoInstradamento" ColumnName="IndTipoInstradamento" />
+          <ScalarProperty Name="CodDestSdi" ColumnName="CodDestSdi" />
+          <ScalarProperty Name="IndStato" ColumnName="IndStato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOCG_PRIMANOTA">
+      <EntityTypeMapping TypeName="AlyEfesModel.GOCG_PRIMANOTA">
+        <MappingFragment StoreEntitySet="GOCG_PRIMANOTA">
+          <ScalarProperty Name="Ditta" ColumnName="Ditta" />
+          <ScalarProperty Name="GoKey" ColumnName="GoKey" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="Esito" ColumnName="Esito" />
+          <ScalarProperty Name="Operazione" ColumnName="Operazione" />
+          <ScalarProperty Name="ModReg" ColumnName="ModReg" />
+          <ScalarProperty Name="TipoRec" ColumnName="TipoRec" />
+          <ScalarProperty Name="DataReg" ColumnName="DataReg" />
+          <ScalarProperty Name="DataDocOri" ColumnName="DataDocOri" />
+          <ScalarProperty Name="NumDocOri" ColumnName="NumDocOri" />
+          <ScalarProperty Name="CodiceCausale" ColumnName="CodiceCausale" />
+          <ScalarProperty Name="DescrizioneAggCode" ColumnName="DescrizioneAggCode" />
+          <ScalarProperty Name="CodiceValuta" ColumnName="CodiceValuta" />
+          <ScalarProperty Name="CodiceConto" ColumnName="CodiceConto" />
+          <ScalarProperty Name="TipoCF" ColumnName="TipoCF" />
+          <ScalarProperty Name="CodiceCliFor" ColumnName="CodiceCliFor" />
+          <ScalarProperty Name="IndDareAvere" ColumnName="IndDareAvere" />
+          <ScalarProperty Name="ImpOperEuro" ColumnName="ImpOperEuro" />
+          <ScalarProperty Name="NumReg" ColumnName="NumReg" />
+          <ScalarProperty Name="IndStato" ColumnName="IndStato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOCM_DOCUMENTO">
+      <EntityTypeMapping TypeName="AlyEfesModel.GOCM_DOCUMENTO">
+        <MappingFragment StoreEntitySet="GOCM_DOCUMENTO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Id_Operazione" ColumnName="Id_Operazione" />
+          <ScalarProperty Name="Id_Operazione_Prog" ColumnName="Id_Operazione_Prog" />
+          <ScalarProperty Name="Id_Operazione_Rif" ColumnName="Id_Operazione_Rif" />
+          <ScalarProperty Name="Id_Elaborazione_1" ColumnName="Id_Elaborazione_1" />
+          <ScalarProperty Name="Id_Elaborazione_2" ColumnName="Id_Elaborazione_2" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="Esito" ColumnName="Esito" />
+          <ScalarProperty Name="Import" ColumnName="Import" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="Err" ColumnName="Err" />
+          <ScalarProperty Name="Err_Note" ColumnName="Err_Note" />
+          <ScalarProperty Name="Operazione" ColumnName="Operazione" />
+          <ScalarProperty Name="Operazione_Mod" ColumnName="Operazione_Mod" />
+          <ScalarProperty Name="Data_Insert" ColumnName="Data_Insert" />
+          <ScalarProperty Name="Data_Update" ColumnName="Data_Update" />
+          <ScalarProperty Name="Ditta" ColumnName="Ditta" />
+          <ScalarProperty Name="Key_1" ColumnName="Key_1" />
+          <ScalarProperty Name="Key_2" ColumnName="Key_2" />
+          <ScalarProperty Name="Key_Rif_1" ColumnName="Key_Rif_1" />
+          <ScalarProperty Name="Key_Rif_2" ColumnName="Key_Rif_2" />
+          <ScalarProperty Name="TipoRec" ColumnName="TipoRec" />
+          <ScalarProperty Name="Riga" ColumnName="Riga" />
+          <ScalarProperty Name="CodDocumento" ColumnName="CodDocumento" />
+          <ScalarProperty Name="DataReg" ColumnName="DataReg" />
+          <ScalarProperty Name="DataDoc" ColumnName="DataDoc" />
+          <ScalarProperty Name="CodSez" ColumnName="CodSez" />
+          <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
+          <ScalarProperty Name="NumDocOri" ColumnName="NumDocOri" />
+          <ScalarProperty Name="TipoCF" ColumnName="TipoCF" />
+          <ScalarProperty Name="CodCliFor" ColumnName="CodCliFor" />
+          <ScalarProperty Name="CodPag" ColumnName="CodPag" />
+          <ScalarProperty Name="CodDeposito" ColumnName="CodDeposito" />
+          <ScalarProperty Name="Aliva" ColumnName="Aliva" />
+          <ScalarProperty Name="CodCauPrestazione" ColumnName="CodCauPrestazione" />
+          <ScalarProperty Name="DataDaCompetenzaTes" ColumnName="DataDaCompetenzaTes" />
+          <ScalarProperty Name="DataACompetenzaTes" ColumnName="DataACompetenzaTes" />
+          <ScalarProperty Name="DescrizioneAggCoGe" ColumnName="DescrizioneAggCoGe" />
+          <ScalarProperty Name="CodSdi" ColumnName="CodSdi" />
+          <ScalarProperty Name="IndicatoreTipoRiga" ColumnName="IndicatoreTipoRiga" />
+          <ScalarProperty Name="CodArticolo" ColumnName="CodArticolo" />
+          <ScalarProperty Name="DescrizioneArticolo" ColumnName="DescrizioneArticolo" />
+          <ScalarProperty Name="Um" ColumnName="Um" />
+          <ScalarProperty Name="Qta" ColumnName="Qta" />
+          <ScalarProperty Name="Prezzo" ColumnName="Prezzo" />
+          <ScalarProperty Name="Sc1" ColumnName="Sc1" />
+          <ScalarProperty Name="Sc2" ColumnName="Sc2" />
+          <ScalarProperty Name="AlivaRiga" ColumnName="AlivaRiga" />
+          <ScalarProperty Name="ContoContropartita" ColumnName="ContoContropartita" />
+          <ScalarProperty Name="FlgRitAcconto" ColumnName="FlgRitAcconto" />
+          <ScalarProperty Name="FlgConIntegrativo" ColumnName="FlgConIntegrativo" />
+          <ScalarProperty Name="DataDaCompetenzaRiga" ColumnName="DataDaCompetenzaRiga" />
+          <ScalarProperty Name="DataACompetenzaRiga" ColumnName="DataACompetenzaRiga" />
+          <ScalarProperty Name="DataCompetenzaIva" ColumnName="DataCompetenzaIva" />
+          <ScalarProperty Name="IndStato" ColumnName="IndStato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GORP_RITENUTEP">
+      <EntityTypeMapping TypeName="AlyEfesModel.GORP_RITENUTEP">
+        <MappingFragment StoreEntitySet="GORP_RITENUTEP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Id_Operazione" ColumnName="Id_Operazione" />
+          <ScalarProperty Name="Id_Operazione_Prog" ColumnName="Id_Operazione_Prog" />
+          <ScalarProperty Name="Id_Operazione_Rif" ColumnName="Id_Operazione_Rif" />
+          <ScalarProperty Name="Id_Elaborazione_1" ColumnName="Id_Elaborazione_1" />
+          <ScalarProperty Name="Id_Elaborazione_2" ColumnName="Id_Elaborazione_2" />
+          <ScalarProperty Name="Stato" ColumnName="Stato" />
+          <ScalarProperty Name="Esito" ColumnName="Esito" />
+          <ScalarProperty Name="Import" ColumnName="Import" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="Err" ColumnName="Err" />
+          <ScalarProperty Name="Err_Note" ColumnName="Err_Note" />
+          <ScalarProperty Name="Operazione" ColumnName="Operazione" />
+          <ScalarProperty Name="Operazione_Mod" ColumnName="Operazione_Mod" />
+          <ScalarProperty Name="Data_Insert" ColumnName="Data_Insert" />
+          <ScalarProperty Name="Data_Update" ColumnName="Data_Update" />
+          <ScalarProperty Name="Key_1" ColumnName="Key_1" />
+          <ScalarProperty Name="Key_2" ColumnName="Key_2" />
+          <ScalarProperty Name="Key_Rif_1" ColumnName="Key_Rif_1" />
+          <ScalarProperty Name="Key_Rif_2" ColumnName="Key_Rif_2" />
+          <ScalarProperty Name="ProgFlusso" ColumnName="ProgFlusso" />
+          <ScalarProperty Name="TipoRec" ColumnName="TipoRec" />
+          <ScalarProperty Name="Ditta" ColumnName="Ditta" />
+          <ScalarProperty Name="DataReg" ColumnName="DataReg" />
+          <ScalarProperty Name="NumDocOri" ColumnName="NumDocOri" />
+          <ScalarProperty Name="DataDocOri" ColumnName="DataDocOri" />
+          <ScalarProperty Name="CodSez" ColumnName="CodSez" />
+          <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
+          <ScalarProperty Name="TipoPrest" ColumnName="TipoPrest" />
+          <ScalarProperty Name="CodiceCauPrest" ColumnName="CodiceCauPrest" />
+          <ScalarProperty Name="CodFor" ColumnName="CodFor" />
+          <ScalarProperty Name="CodTribRa" ColumnName="CodTribRa" />
+          <ScalarProperty Name="CodTribRp" ColumnName="CodTribRp" />
+          <ScalarProperty Name="TotDoc" ColumnName="TotDoc" />
+          <ScalarProperty Name="TotIva" ColumnName="TotIva" />
+          <ScalarProperty Name="IndSegno" ColumnName="IndSegno" />
+          <ScalarProperty Name="IndAssRa" ColumnName="IndAssRa" />
+          <ScalarProperty Name="ImportoCi" ColumnName="ImportoCi" />
+          <ScalarProperty Name="ImportoPrNs" ColumnName="ImportoPrNs" />
+          <ScalarProperty Name="ImponibileSoRa" ColumnName="ImponibileSoRa" />
+          <ScalarProperty Name="PercRa" ColumnName="PercRa" />
+          <ScalarProperty Name="ImportoRa" ColumnName="ImportoRa" />
+          <ScalarProperty Name="ImportoAlRi" ColumnName="ImportoAlRi" />
+          <ScalarProperty Name="ImportoEnCa" ColumnName="ImportoEnCa" />
+          <ScalarProperty Name="ImportoNsRa" ColumnName="ImportoNsRa" />
+          <ScalarProperty Name="ImportoFrRp" ColumnName="ImportoFrRp" />
+          <ScalarProperty Name="ImponibileSoRp" ColumnName="ImponibileSoRp" />
+          <ScalarProperty Name="PercRp" ColumnName="PercRp" />
+          <ScalarProperty Name="PercRpCa" ColumnName="PercRpCa" />
+          <ScalarProperty Name="ImportoRpPe" ColumnName="ImportoRpPe" />
+          <ScalarProperty Name="ImportoRpCa" ColumnName="ImportoRpCa" />
+          <ScalarProperty Name="AnnoComp770" ColumnName="AnnoComp770" />
+          <ScalarProperty Name="CertRaSt" ColumnName="CertRaSt" />
+          <ScalarProperty Name="DataInAtt" ColumnName="DataInAtt" />
+          <ScalarProperty Name="DataFiAtt" ColumnName="DataFiAtt" />
+          <ScalarProperty Name="PagTot" ColumnName="PagTot" />
+          <ScalarProperty Name="DataPag" ColumnName="DataPag" />
+          <ScalarProperty Name="MeseCompPag" ColumnName="MeseCompPag" />
+          <ScalarProperty Name="AnnoCompPag" ColumnName="AnnoCompPag" />
+          <ScalarProperty Name="ImportoPag" ColumnName="ImportoPag" />
+          <ScalarProperty Name="ImportoAbb" ColumnName="ImportoAbb" />
+          <ScalarProperty Name="ImportoCiPag" ColumnName="ImportoCiPag" />
+          <ScalarProperty Name="ImportoPrNsPag" ColumnName="ImportoPrNsPag" />
+          <ScalarProperty Name="ImponibileSoRaPag" ColumnName="ImponibileSoRaPag" />
+          <ScalarProperty Name="ImportoRaPag" ColumnName="ImportoRaPag" />
+          <ScalarProperty Name="ImportoAlRiPag" ColumnName="ImportoAlRiPag" />
+          <ScalarProperty Name="ImportoEnCaPag" ColumnName="ImportoEnCaPag" />
+          <ScalarProperty Name="ImportoNsRaPag" ColumnName="ImportoNsRaPag" />
+          <ScalarProperty Name="ImportoFrRpPag" ColumnName="ImportoFrRpPag" />
+          <ScalarProperty Name="ImponibileSoRpPag" ColumnName="ImponibileSoRpPag" />
+          <ScalarProperty Name="ImportoRpPePag" ColumnName="ImportoRpPePag" />
+          <ScalarProperty Name="ImportoRpCaPag" ColumnName="ImportoRpCaPag" />
+          <ScalarProperty Name="ImportoCredImposta" ColumnName="ImportoCredImposta" />
+          <ScalarProperty Name="MeseCompVersRa" ColumnName="MeseCompVersRa" />
+          <ScalarProperty Name="AnnoCompVersRa" ColumnName="AnnoCompVersRa" />
+          <ScalarProperty Name="TipoVers" ColumnName="TipoVers" />
+          <ScalarProperty Name="CodAbiVersRa" ColumnName="CodAbiVersRa" />
+          <ScalarProperty Name="CodCabVersRa" ColumnName="CodCabVersRa" />
+          <ScalarProperty Name="SerieVersRa" ColumnName="SerieVersRa" />
+          <ScalarProperty Name="QuietVersRa" ColumnName="QuietVersRa" />
+          <ScalarProperty Name="CcPostaleVersRa" ColumnName="CcPostaleVersRa" />
+          <ScalarProperty Name="MeseCompVersRp" ColumnName="MeseCompVersRp" />
+          <ScalarProperty Name="AnnoCompVersRp" ColumnName="AnnoCompVersRp" />
+          <ScalarProperty Name="TipoVersRp" ColumnName="TipoVersRp" />
+          <ScalarProperty Name="CodAbiVersRp" ColumnName="CodAbiVersRp" />
+          <ScalarProperty Name="CodCabVersRp" ColumnName="CodCabVersRp" />
+          <ScalarProperty Name="SerieVersRp" ColumnName="SerieVersRp" />
+          <ScalarProperty Name="QuietVersRp" ColumnName="QuietVersRp" />
+          <ScalarProperty Name="CcPostaleVersRp" ColumnName="CcPostaleVersRp" />
+          <ScalarProperty Name="CertRaStPag" ColumnName="CertRaStPag" />
+          <ScalarProperty Name="CertRpStPag" ColumnName="CertRpStPag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_GFAR_CLIFOR">
+      <EntityTypeMapping TypeName="AlyEfesModel.VW_GFAR_CLIFOR">
+        <MappingFragment StoreEntitySet="VW_GFAR_CLIFOR">
+          <ScalarProperty Name="Ditta" ColumnName="Ditta" />
+          <ScalarProperty Name="TipoCF" ColumnName="TipoCF" />
+          <ScalarProperty Name="GoKeyCF" ColumnName="GoKeyCF" />
+          <ScalarProperty Name="GfKeyCF" ColumnName="GfKeyCF" />
+          <ScalarProperty Name="CodiceEsportazione__CodiceEsportazione" ColumnName="CodiceEsportazione&#xD;&#xA;CodiceEsportazione" />
+          <ScalarProperty Name="PartIva" ColumnName="PartIva" />
+          <ScalarProperty Name="CodFiscale" ColumnName="CodFiscale" />
+          <ScalarProperty Name="FlgPrsFis" ColumnName="FlgPrsFis" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Sesso" ColumnName="Sesso" />
+          <ScalarProperty Name="DataNascita" ColumnName="DataNascita" />
+          <ScalarProperty Name="ComNascita" ColumnName="ComNascita" />
+          <ScalarProperty Name="ProvNascita" ColumnName="ProvNascita" />
+          <ScalarProperty Name="RagioneSociale" ColumnName="RagioneSociale" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="CodiceComune" ColumnName="CodiceComune" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Prov" ColumnName="Prov" />
+          <ScalarProperty Name="RagSocFisc" ColumnName="RagSocFisc" />
+          <ScalarProperty Name="IndFisc" ColumnName="IndFisc" />
+          <ScalarProperty Name="CodiceComuneFisc" ColumnName="CodiceComuneFisc" />
+          <ScalarProperty Name="CapFisc" ColumnName="CapFisc" />
+          <ScalarProperty Name="CittaFisc" ColumnName="CittaFisc" />
+          <ScalarProperty Name="ProvFisc" ColumnName="ProvFisc" />
+          <ScalarProperty Name="IndSoggRit" ColumnName="IndSoggRit" />
+          <ScalarProperty Name="CodiceCauPrest" ColumnName="CodiceCauPrest" />
+          <ScalarProperty Name="Tel1Num" ColumnName="Tel1Num" />
+          <ScalarProperty Name="Tel2Num" ColumnName="Tel2Num" />
+          <ScalarProperty Name="FaxNum" ColumnName="FaxNum" />
+          <ScalarProperty Name="CellNum" ColumnName="CellNum" />
+          <ScalarProperty Name="IndirizzoEmail" ColumnName="IndirizzoEmail" />
+          <ScalarProperty Name="CodPag" ColumnName="CodPag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_CreaRecord" FunctionName="AlyEfesModel.Store.SP_CreaRecord" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_CAUSALE" FunctionName="AlyEfesModel.Store.SP_GFTA_CAUSALE" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_CAUSALEPREST" FunctionName="AlyEfesModel.Store.SP_GFTA_CAUSALEPREST" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_COMUNE" FunctionName="AlyEfesModel.Store.SP_GFTA_COMUNE" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_IVA" FunctionName="AlyEfesModel.Store.SP_GFTA_IVA" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_PAGAMENTO" FunctionName="AlyEfesModel.Store.SP_GFTA_PAGAMENTO" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_PDC" FunctionName="AlyEfesModel.Store.SP_GFTA_PDC" />
+    <FunctionImportMapping FunctionImportName="SP_GFTA_STATOESTERO" FunctionName="AlyEfesModel.Store.SP_GFTA_STATOESTERO" />
+    <FunctionImportMapping FunctionImportName="zSP_CANCELLA_TABELLE_GF" FunctionName="AlyEfesModel.Store.zSP_CANCELLA_TABELLE_GF" />
+    <FunctionImportMapping FunctionImportName="zSP_GOCG_CliFor" FunctionName="AlyEfesModel.Store.zSP_GOCG_CliFor" />
+    <EntitySetMapping Name="SYS_MENU">
+      <EntityTypeMapping TypeName="AlyEfesModel.SYS_MENU">
+        <MappingFragment StoreEntitySet="SYS_MENU">
+          <ScalarProperty Name="SYS_APPLICAZIONE" ColumnName="SYS_APPLICAZIONE" />
+          <ScalarProperty Name="SYS_AREA" ColumnName="SYS_AREA" />
+          <ScalarProperty Name="SYS_ID" ColumnName="SYS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_PARAMETRI">
+      <EntityTypeMapping TypeName="AlyEfesModel.SYS_PARAMETRI">
+        <MappingFragment StoreEntitySet="SYS_PARAMETRI">
+          <ScalarProperty Name="SYS_VALORE" ColumnName="SYS_VALORE" />
+          <ScalarProperty Name="SYS_PARAMETRO" ColumnName="SYS_PARAMETRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_UTENTE">
+      <EntityTypeMapping TypeName="AlyEfesModel.SYS_UTENTE">
+        <MappingFragment StoreEntitySet="SYS_UTENTE">
+          <ScalarProperty Name="SYS_FLGATTIVO" ColumnName="SYS_FLGATTIVO" />
+          <ScalarProperty Name="SYS_ADMIN" ColumnName="SYS_ADMIN" />
+          <ScalarProperty Name="SYS_EMAIL" ColumnName="SYS_EMAIL" />
+          <ScalarProperty Name="SYS_DESCRIZIONE" ColumnName="SYS_DESCRIZIONE" />
+          <ScalarProperty Name="SYS_PASSWORD" ColumnName="SYS_PASSWORD" />
+          <ScalarProperty Name="SYS_USERNAME" ColumnName="SYS_USERNAME" />
+          <ScalarProperty Name="SYS_ID" ColumnName="SYS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
 import {BrowserRouter} from 'react-router-dom';
-import GeneralLayout from './Components/GeneralLayout';
-import Login from './Components/Login';
+import Container from './Components/Container';
+import Login from './Components/login/Login';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <GeneralLayout></GeneralLayout>
+        <Container></Container>
       </BrowserRouter>
     );
   }

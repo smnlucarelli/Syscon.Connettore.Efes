@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj": {}
+    "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj": {
+    "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj",
+        "projectUniqueName": "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj",
         "projectName": "sys-connettore-database",
-        "projectPath": "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj",
+        "projectPath": "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,14 +19,14 @@
         "net48": {}
       }
     },
-    "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj": {
+    "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj",
+        "projectUniqueName": "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj",
         "projectName": "sys-connettore-webapi",
-        "projectPath": "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj",
+        "projectPath": "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\sys-connettore-webapi.csproj",
         "packagesPath": "C:\\Users\\user06\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\obj\\",
+        "outputPath": "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -38,18 +38,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj": {
-                "projectPath": "C:\\Users\\user06\\Desktop\\Code\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj"
+              "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj": {
+                "projectPath": "C:\\Users\\user06\\Desktop\\Code\\FIT\\Syscon.Connettore.Efes\\sys-connettore-backend\\sys-connettore-database\\sys-connettore-database.csproj"
               }
             }
           }
@@ -61,9 +61,13 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNet.WebApi.Cors": {
               "target": "Package",
               "version": "[5.2.9, )"

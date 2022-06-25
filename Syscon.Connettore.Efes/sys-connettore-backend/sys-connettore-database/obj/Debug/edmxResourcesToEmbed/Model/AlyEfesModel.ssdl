@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlyEfesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_CAUSALE'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_CAUSALE">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="40" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_CAUSALEPREST'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_CAUSALEPREST">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="40" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_COMUNE'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_COMUNE">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="40" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_IVA'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_IVA">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="40" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_PAGAMENTO'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_PAGAMENTO">
+    <Key>
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Name="Codice" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="40" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_PDC'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_PDC">
+    <Key>
+      <PropertyRef Name="CodiceGruppo" />
+      <PropertyRef Name="Conto" />
+      <PropertyRef Name="Descr" />
+    </Key>
+    <Property Name="CodiceGruppo" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="Conto" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_STATOESTERO'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GFTA_STATOESTERO">
+    <Key>
+      <PropertyRef Name="Codice" />
+      <PropertyRef Name="TipoStato" />
+    </Key>
+    <Property Name="Codice" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="Descr" Type="varchar" MaxLength="40" />
+    <Property Name="CodiceIso" Type="varchar" MaxLength="2" />
+    <Property Name="CodiceValuta" Type="char" MaxLength="4" />
+    <Property Name="TipoStato" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="DescrizioneValuta" Type="varchar" MaxLength="40" />
+    <Property Name="SiglaValuta" Type="varchar" MaxLength="5" />
+    <Property Name="DataOraSync" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GOAR_CLIFOR'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GOAR_CLIFOR">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Ditta" />
+      <PropertyRef Name="Tipocf" />
+      <PropertyRef Name="Stato" />
+      <PropertyRef Name="Esito" />
+      <PropertyRef Name="FlgPrsFis" />
+      <PropertyRef Name="Sesso" />
+      <PropertyRef Name="IndSoggRit" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Elaborazione_1" Type="uniqueidentifier" />
+    <Property Name="Ditta" Type="decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Tipocf" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Key_1" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="Stato" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Esito" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="PartIva" Type="char" MaxLength="12" />
+    <Property Name="CodFiscale" Type="varchar" MaxLength="20" />
+    <Property Name="FlgPrsFis" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Cognome" Type="varchar" MaxLength="40" />
+    <Property Name="Nome" Type="varchar" MaxLength="20" />
+    <Property Name="Sesso" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="DataNascita" Type="datetime" />
+    <Property Name="ComNascita" Type="varchar" MaxLength="40" />
+    <Property Name="ProvNascita" Type="char" MaxLength="2" />
+    <Property Name="CodiceComuneNasc" Type="char" MaxLength="4" />
+    <Property Name="NazioneIsoNasc" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="CodPag" Type="char" MaxLength="6" />
+    <Property Name="Tel1Num" Type="varchar" MaxLength="24" />
+    <Property Name="Tel2Num" Type="varchar" MaxLength="24" />
+    <Property Name="FaxNum" Type="varchar" MaxLength="24" />
+    <Property Name="CellNum" Type="varchar" MaxLength="24" />
+    <Property Name="IndirizzoEmail" Type="varchar" MaxLength="128" />
+    <Property Name="EmailPec" Type="varchar" MaxLength="128" />
+    <Property Name="RagioneSociale" Type="varchar" MaxLength="60" />
+    <Property Name="CodiceComune" Type="char" MaxLength="4" />
+    <Property Name="Indirizzo" Type="varchar" MaxLength="40" />
+    <Property Name="Citta" Type="varchar" MaxLength="40" />
+    <Property Name="Cap" Type="char" MaxLength="10" />
+    <Property Name="Prov" Type="char" MaxLength="2" />
+    <Property Name="NazioneIso" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="RagSocFisc" Type="varchar" MaxLength="60" />
+    <Property Name="CodiceComuneFisc" Type="char" MaxLength="4" />
+    <Property Name="IndFisc" Type="varchar" MaxLength="40" />
+    <Property Name="CittaFisc" Type="varchar" MaxLength="40" />
+    <Property Name="CapFisc" Type="char" MaxLength="10" />
+    <Property Name="ProvFisc" Type="char" MaxLength="2" />
+    <Property Name="NazioneIsoFisc" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="PartIvaEst" Type="char" MaxLength="20" />
+    <Property Name="Aliva" Type="char" MaxLength="4" />
+    <Property Name="IndSoggRit" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="CodiceCauPrest" Type="char" MaxLength="4" />
+    <Property Name="IndTipoInstradamento" Type="tinyint" />
+    <Property Name="CodDestSdi" Type="varchar" MaxLength="36" />
+    <Property Name="IndStato" Type="decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GOCG_PRIMANOTA'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GOCG_PRIMANOTA">
+    <Key>
+      <PropertyRef Name="Ditta" />
+      <PropertyRef Name="GoKey" />
+      <PropertyRef Name="Stato" />
+      <PropertyRef Name="Esito" />
+    </Key>
+    <Property Name="Ditta" Type="decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="GoKey" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Stato" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Esito" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="Operazione" Type="varchar" MaxLength="3" />
+    <Property Name="ModReg" Type="varchar" MaxLength="31" />
+    <Property Name="TipoRec" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="DataReg" Type="datetime" />
+    <Property Name="DataDocOri" Type="datetime" />
+    <Property Name="NumDocOri" Type="varchar" MaxLength="10" />
+    <Property Name="CodiceCausale" Type="varchar" MaxLength="4" />
+    <Property Name="DescrizioneAggCode" Type="varchar" MaxLength="240" />
+    <Property Name="CodiceValuta" Type="varchar" MaxLength="4" />
+    <Property Name="CodiceConto" Type="varchar" MaxLength="10" />
+    <Property Name="TipoCF" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="CodiceCliFor" Type="int" />
+    <Property Name="IndDareAvere" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="ImpOperEuro" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="NumReg" Type="varchar" MaxLength="12" />
+    <Property Name="IndStato" Type="decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GOCM_DOCUMENTO'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GOCM_DOCUMENTO">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CodPag" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Operazione" Type="bigint" />
+    <Property Name="Id_Operazione_Prog" Type="int" />
+    <Property Name="Id_Operazione_Rif" Type="bigint" />
+    <Property Name="Id_Elaborazione_1" Type="uniqueidentifier" />
+    <Property Name="Id_Elaborazione_2" Type="uniqueidentifier" />
+    <Property Name="Stato" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Esito" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Import" Type="int" />
+    <Property Name="Del" Type="int" />
+    <Property Name="Err" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Err_Note" Type="varchar" MaxLength="240" />
+    <Property Name="Operazione" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Operazione_Mod" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Data_Insert" Type="datetime" />
+    <Property Name="Data_Update" Type="datetime" />
+    <Property Name="Ditta" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="Key_1" Type="varchar" MaxLength="30" />
+    <Property Name="Key_2" Type="char" MaxLength="12" />
+    <Property Name="Key_Rif_1" Type="varchar" MaxLength="30" />
+    <Property Name="Key_Rif_2" Type="char" MaxLength="12" />
+    <Property Name="TipoRec" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Riga" Type="int" />
+    <Property Name="CodDocumento" Type="varchar" MaxLength="104" />
+    <Property Name="DataReg" Type="datetime" />
+    <Property Name="DataDoc" Type="datetime" />
+    <Property Name="CodSez" Type="varchar" MaxLength="2" />
+    <Property Name="NumDoc" Type="int" />
+    <Property Name="NumDocOri" Type="varchar" MaxLength="10" />
+    <Property Name="TipoCF" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="CodCliFor" Type="int" />
+    <Property Name="CodPag" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="CodDeposito" Type="varchar" MaxLength="2" />
+    <Property Name="Aliva" Type="varchar" MaxLength="4" />
+    <Property Name="CodCauPrestazione" Type="char" MaxLength="4" />
+    <Property Name="DataDaCompetenzaTes" Type="datetime" />
+    <Property Name="DataACompetenzaTes" Type="datetime" />
+    <Property Name="DescrizioneAggCoGe" Type="varchar" MaxLength="240" />
+    <Property Name="CodSdi" Type="varchar" MaxLength="36" />
+    <Property Name="IndicatoreTipoRiga" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="CodArticolo" Type="varchar" MaxLength="25" />
+    <Property Name="DescrizioneArticolo" Type="varchar" MaxLength="240" />
+    <Property Name="Um" Type="varchar" MaxLength="2" />
+    <Property Name="Qta" Type="decimal" Precision="14" Scale="3" />
+    <Property Name="Prezzo" Type="decimal" Precision="17" Scale="6" />
+    <Property Name="Sc1" Type="decimal" Precision="6" Scale="3" />
+    <Property Name="Sc2" Type="decimal" Precision="6" Scale="3" />
+    <Property Name="AlivaRiga" Type="varchar" MaxLength="4" />
+    <Property Name="ContoContropartita" Type="varchar" MaxLength="10" />
+    <Property Name="FlgRitAcconto" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="FlgConIntegrativo" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="DataDaCompetenzaRiga" Type="datetime" />
+    <Property Name="DataACompetenzaRiga" Type="datetime" />
+    <Property Name="DataCompetenzaIva" Type="datetime" />
+    <Property Name="IndStato" Type="decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GORP_RITENUTEP'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="GORP_RITENUTEP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Operazione" Type="bigint" />
+    <Property Name="Id_Operazione_Prog" Type="int" />
+    <Property Name="Id_Operazione_Rif" Type="bigint" />
+    <Property Name="Id_Elaborazione_1" Type="uniqueidentifier" />
+    <Property Name="Id_Elaborazione_2" Type="uniqueidentifier" />
+    <Property Name="Stato" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Esito" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Import" Type="int" />
+    <Property Name="Del" Type="int" />
+    <Property Name="Err" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Err_Note" Type="varchar" MaxLength="240" />
+    <Property Name="Operazione" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Operazione_Mod" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Data_Insert" Type="datetime" />
+    <Property Name="Data_Update" Type="datetime" />
+    <Property Name="Key_1" Type="varchar" MaxLength="30" />
+    <Property Name="Key_2" Type="char" MaxLength="12" />
+    <Property Name="Key_Rif_1" Type="varchar" MaxLength="30" />
+    <Property Name="Key_Rif_2" Type="char" MaxLength="12" />
+    <Property Name="ProgFlusso" Type="int" />
+    <Property Name="TipoRec" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="Ditta" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="DataReg" Type="datetime" />
+    <Property Name="NumDocOri" Type="varchar" MaxLength="10" />
+    <Property Name="DataDocOri" Type="datetime" />
+    <Property Name="CodSez" Type="varchar" MaxLength="2" />
+    <Property Name="NumDoc" Type="int" />
+    <Property Name="TipoPrest" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="CodiceCauPrest" Type="char" MaxLength="4" />
+    <Property Name="CodFor" Type="int" />
+    <Property Name="CodTribRa" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="CodTribRp" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="TotDoc" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="TotIva" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="IndSegno" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="IndAssRa" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="ImportoCi" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoPrNs" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRa" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PercRa" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="ImportoRa" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoAlRi" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoEnCa" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoNsRa" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoFrRp" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRp" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PercRp" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="PercRpCa" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="ImportoRpPe" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRpCa" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="AnnoComp770" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="CertRaSt" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="DataInAtt" Type="datetime" />
+    <Property Name="DataFiAtt" Type="datetime" />
+    <Property Name="PagTot" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="DataPag" Type="datetime" />
+    <Property Name="MeseCompPag" Type="decimal" Precision="2" Scale="0" />
+    <Property Name="AnnoCompPag" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="ImportoPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoAbb" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoCiPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoPrNsPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRaPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRaPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoAlRiPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoEnCaPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoNsRaPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoFrRpPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImponibileSoRpPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRpPePag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoRpCaPag" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="ImportoCredImposta" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="MeseCompVersRa" Type="decimal" Precision="2" Scale="0" />
+    <Property Name="AnnoCompVersRa" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="TipoVers" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="CodAbiVersRa" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="CodCabVersRa" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="SerieVersRa" Type="char" MaxLength="4" />
+    <Property Name="QuietVersRa" Type="char" MaxLength="12" />
+    <Property Name="CcPostaleVersRa" Type="char" MaxLength="12" />
+    <Property Name="MeseCompVersRp" Type="decimal" Precision="2" Scale="0" />
+    <Property Name="AnnoCompVersRp" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="TipoVersRp" Type="char" MaxLength="1" />
+    <Property Name="CodAbiVersRp" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="CodCabVersRp" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="SerieVersRp" Type="char" MaxLength="4" />
+    <Property Name="QuietVersRp" Type="char" MaxLength="12" />
+    <Property Name="CcPostaleVersRp" Type="char" MaxLength="12" />
+    <Property Name="CertRaStPag" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="CertRpStPag" Type="decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="SYS_MENU">
+    <Key>
+      <PropertyRef Name="SYS_ID" />
+    </Key>
+    <Property Name="SYS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SYS_AREA" Type="varchar" MaxLength="100" />
+    <Property Name="SYS_APPLICAZIONE" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SYS_PARAMETRI">
+    <Key>
+      <PropertyRef Name="SYS_PARAMETRO" />
+    </Key>
+    <Property Name="SYS_PARAMETRO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SYS_VALORE" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_UTENTE">
+    <Key>
+      <PropertyRef Name="SYS_USERNAME" />
+    </Key>
+    <Property Name="SYS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SYS_USERNAME" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="SYS_PASSWORD" Type="nvarchar" MaxLength="77" Nullable="false" />
+    <Property Name="SYS_DESCRIZIONE" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="SYS_EMAIL" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="SYS_ADMIN" Type="int" Nullable="false" />
+    <Property Name="SYS_FLGATTIVO" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.VW_GFAR_CLIFOR'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="VW_GFAR_CLIFOR">
+    <Key>
+      <PropertyRef Name="Ditta" />
+      <PropertyRef Name="TipoCF" />
+      <PropertyRef Name="GfKeyCF" />
+      <PropertyRef Name="FlgPrsFis" />
+      <PropertyRef Name="Sesso" />
+      <PropertyRef Name="IndSoggRit" />
+    </Key>
+    <Property Name="Ditta" Type="decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="TipoCF" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="GoKeyCF" Type="varchar" MaxLength="40" />
+    <Property Name="GfKeyCF" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="CodiceEsportazione&#xD;&#xA;CodiceEsportazione" Type="varchar" MaxLength="40" />
+    <Property Name="PartIva" Type="char" MaxLength="20" />
+    <Property Name="CodFiscale" Type="varchar" MaxLength="20" />
+    <Property Name="FlgPrsFis" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="Cognome" Type="varchar" MaxLength="40" />
+    <Property Name="Nome" Type="varchar" MaxLength="20" />
+    <Property Name="Sesso" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="DataNascita" Type="datetime" />
+    <Property Name="ComNascita" Type="varchar" MaxLength="40" />
+    <Property Name="ProvNascita" Type="char" MaxLength="2" />
+    <Property Name="RagioneSociale" Type="varchar" MaxLength="60" />
+    <Property Name="Indirizzo" Type="varchar" MaxLength="40" />
+    <Property Name="CodiceComune" Type="char" MaxLength="4" />
+    <Property Name="Cap" Type="char" MaxLength="10" />
+    <Property Name="Citta" Type="varchar" MaxLength="40" />
+    <Property Name="Prov" Type="char" MaxLength="2" />
+    <Property Name="RagSocFisc" Type="varchar" MaxLength="60" />
+    <Property Name="IndFisc" Type="varchar" MaxLength="40" />
+    <Property Name="CodiceComuneFisc" Type="char" MaxLength="4" />
+    <Property Name="CapFisc" Type="char" MaxLength="10" />
+    <Property Name="CittaFisc" Type="varchar" MaxLength="40" />
+    <Property Name="ProvFisc" Type="char" MaxLength="2" />
+    <Property Name="IndSoggRit" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+    <Property Name="CodiceCauPrest" Type="char" MaxLength="4" />
+    <Property Name="Tel1Num" Type="varchar" MaxLength="24" />
+    <Property Name="Tel2Num" Type="varchar" MaxLength="24" />
+    <Property Name="FaxNum" Type="varchar" MaxLength="24" />
+    <Property Name="CellNum" Type="varchar" MaxLength="24" />
+    <Property Name="IndirizzoEmail" Type="varchar" MaxLength="128" />
+    <Property Name="CodPag" Type="char" MaxLength="6" />
+  </EntityType>
+  <Function Name="SP_CreaRecord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_CAUSALE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_CAUSALEPREST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_COMUNE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_IVA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_PAGAMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_PDC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GFTA_STATOESTERO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="zSP_CANCELLA_TABELLE_GF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="zSP_GOCG_CliFor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="AlyEfesModelStoreContainer">
+    <EntitySet Name="SYS_MENU" EntityType="Self.SYS_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_PARAMETRI" EntityType="Self.SYS_PARAMETRI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_UTENTE" EntityType="Self.SYS_UTENTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GFTA_CAUSALE" EntityType="Self.GFTA_CAUSALE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_CAUSALE].[Codice] AS [Codice], 
+[GFTA_CAUSALE].[Descr] AS [Descr], 
+[GFTA_CAUSALE].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_CAUSALE] AS [GFTA_CAUSALE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GFTA_CAUSALEPREST" EntityType="Self.GFTA_CAUSALEPREST" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_CAUSALEPREST].[Codice] AS [Codice], 
+[GFTA_CAUSALEPREST].[Descr] AS [Descr], 
+[GFTA_CAUSALEPREST].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_CAUSALEPREST] AS [GFTA_CAUSALEPREST]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GFTA_COMUNE" EntityType="Self.GFTA_COMUNE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_COMUNE].[Codice] AS [Codice], 
+[GFTA_COMUNE].[Descr] AS [Descr], 
+[GFTA_COMUNE].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_COMUNE] AS [GFTA_COMUNE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GFTA_IVA" EntityType="Self.GFTA_IVA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_IVA].[Codice] AS [Codice], 
+[GFTA_IVA].[Descr] AS [Descr], 
+[GFTA_IVA].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_IVA] AS [GFTA_IVA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GFTA_PAGAMENTO" EntityType="Self.GFTA_PAGAMENTO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_PAGAMENTO].[Codice] AS [Codice], 
+[GFTA_PAGAMENTO].[Descr] AS [Descr], 
+[GFTA_PAGAMENTO].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_PAGAMENTO] AS [GFTA_PAGAMENTO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GFTA_PDC" EntityType="Self.GFTA_PDC" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_PDC].[CodiceGruppo] AS [CodiceGruppo], 
+[GFTA_PDC].[Conto] AS [Conto], 
+[GFTA_PDC].[Descr] AS [Descr], 
+[GFTA_PDC].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_PDC] AS [GFTA_PDC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GFTA_STATOESTERO" EntityType="Self.GFTA_STATOESTERO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GFTA_STATOESTERO].[Codice] AS [Codice], 
+[GFTA_STATOESTERO].[Descr] AS [Descr], 
+[GFTA_STATOESTERO].[CodiceIso] AS [CodiceIso], 
+[GFTA_STATOESTERO].[CodiceValuta] AS [CodiceValuta], 
+[GFTA_STATOESTERO].[TipoStato] AS [TipoStato], 
+[GFTA_STATOESTERO].[DescrizioneValuta] AS [DescrizioneValuta], 
+[GFTA_STATOESTERO].[SiglaValuta] AS [SiglaValuta], 
+[GFTA_STATOESTERO].[DataOraSync] AS [DataOraSync]
+FROM [dbo].[GFTA_STATOESTERO] AS [GFTA_STATOESTERO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GOAR_CLIFOR" EntityType="Self.GOAR_CLIFOR" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GOAR_CLIFOR].[ID] AS [ID], 
+[GOAR_CLIFOR].[Id_Elaborazione_1] AS [Id_Elaborazione_1], 
+[GOAR_CLIFOR].[Ditta] AS [Ditta], 
+[GOAR_CLIFOR].[Tipocf] AS [Tipocf], 
+[GOAR_CLIFOR].[Key_1] AS [Key_1], 
+[GOAR_CLIFOR].[Stato] AS [Stato], 
+[GOAR_CLIFOR].[Esito] AS [Esito], 
+[GOAR_CLIFOR].[PartIva] AS [PartIva], 
+[GOAR_CLIFOR].[CodFiscale] AS [CodFiscale], 
+[GOAR_CLIFOR].[FlgPrsFis] AS [FlgPrsFis], 
+[GOAR_CLIFOR].[Cognome] AS [Cognome], 
+[GOAR_CLIFOR].[Nome] AS [Nome], 
+[GOAR_CLIFOR].[Sesso] AS [Sesso], 
+[GOAR_CLIFOR].[DataNascita] AS [DataNascita], 
+[GOAR_CLIFOR].[ComNascita] AS [ComNascita], 
+[GOAR_CLIFOR].[ProvNascita] AS [ProvNascita], 
+[GOAR_CLIFOR].[CodiceComuneNasc] AS [CodiceComuneNasc], 
+[GOAR_CLIFOR].[NazioneIsoNasc] AS [NazioneIsoNasc], 
+[GOAR_CLIFOR].[CodPag] AS [CodPag], 
+[GOAR_CLIFOR].[Tel1Num] AS [Tel1Num], 
+[GOAR_CLIFOR].[Tel2Num] AS [Tel2Num], 
+[GOAR_CLIFOR].[FaxNum] AS [FaxNum], 
+[GOAR_CLIFOR].[CellNum] AS [CellNum], 
+[GOAR_CLIFOR].[IndirizzoEmail] AS [IndirizzoEmail], 
+[GOAR_CLIFOR].[EmailPec] AS [EmailPec], 
+[GOAR_CLIFOR].[RagioneSociale] AS [RagioneSociale], 
+[GOAR_CLIFOR].[CodiceComune] AS [CodiceComune], 
+[GOAR_CLIFOR].[Indirizzo] AS [Indirizzo], 
+[GOAR_CLIFOR].[Citta] AS [Citta], 
+[GOAR_CLIFOR].[Cap] AS [Cap], 
+[GOAR_CLIFOR].[Prov] AS [Prov], 
+[GOAR_CLIFOR].[NazioneIso] AS [NazioneIso], 
+[GOAR_CLIFOR].[RagSocFisc] AS [RagSocFisc], 
+[GOAR_CLIFOR].[CodiceComuneFisc] AS [CodiceComuneFisc], 
+[GOAR_CLIFOR].[IndFisc] AS [IndFisc], 
+[GOAR_CLIFOR].[CittaFisc] AS [CittaFisc], 
+[GOAR_CLIFOR].[CapFisc] AS [CapFisc], 
+[GOAR_CLIFOR].[ProvFisc] AS [ProvFisc], 
+[GOAR_CLIFOR].[NazioneIsoFisc] AS [NazioneIsoFisc], 
+[GOAR_CLIFOR].[PartIvaEst] AS [PartIvaEst], 
+[GOAR_CLIFOR].[Aliva] AS [Aliva], 
+[GOAR_CLIFOR].[IndSoggRit] AS [IndSoggRit], 
+[GOAR_CLIFOR].[CodiceCauPrest] AS [CodiceCauPrest], 
+[GOAR_CLIFOR].[IndTipoInstradamento] AS [IndTipoInstradamento], 
+[GOAR_CLIFOR].[CodDestSdi] AS [CodDestSdi], 
+[GOAR_CLIFOR].[IndStato] AS [IndStato]
+FROM [dbo].[GOAR_CLIFOR] AS [GOAR_CLIFOR]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GOCG_PRIMANOTA" EntityType="Self.GOCG_PRIMANOTA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GOCG_PRIMANOTA].[Ditta] AS [Ditta], 
+[GOCG_PRIMANOTA].[GoKey] AS [GoKey], 
+[GOCG_PRIMANOTA].[Stato] AS [Stato], 
+[GOCG_PRIMANOTA].[Esito] AS [Esito], 
+[GOCG_PRIMANOTA].[Operazione] AS [Operazione], 
+[GOCG_PRIMANOTA].[ModReg] AS [ModReg], 
+[GOCG_PRIMANOTA].[TipoRec] AS [TipoRec], 
+[GOCG_PRIMANOTA].[DataReg] AS [DataReg], 
+[GOCG_PRIMANOTA].[DataDocOri] AS [DataDocOri], 
+[GOCG_PRIMANOTA].[NumDocOri] AS [NumDocOri], 
+[GOCG_PRIMANOTA].[CodiceCausale] AS [CodiceCausale], 
+[GOCG_PRIMANOTA].[DescrizioneAggCode] AS [DescrizioneAggCode], 
+[GOCG_PRIMANOTA].[CodiceValuta] AS [CodiceValuta], 
+[GOCG_PRIMANOTA].[CodiceConto] AS [CodiceConto], 
+[GOCG_PRIMANOTA].[TipoCF] AS [TipoCF], 
+[GOCG_PRIMANOTA].[CodiceCliFor] AS [CodiceCliFor], 
+[GOCG_PRIMANOTA].[IndDareAvere] AS [IndDareAvere], 
+[GOCG_PRIMANOTA].[ImpOperEuro] AS [ImpOperEuro], 
+[GOCG_PRIMANOTA].[NumReg] AS [NumReg], 
+[GOCG_PRIMANOTA].[IndStato] AS [IndStato]
+FROM [dbo].[GOCG_PRIMANOTA] AS [GOCG_PRIMANOTA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GOCM_DOCUMENTO" EntityType="Self.GOCM_DOCUMENTO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GOCM_DOCUMENTO].[ID] AS [ID], 
+[GOCM_DOCUMENTO].[Id_Operazione] AS [Id_Operazione], 
+[GOCM_DOCUMENTO].[Id_Operazione_Prog] AS [Id_Operazione_Prog], 
+[GOCM_DOCUMENTO].[Id_Operazione_Rif] AS [Id_Operazione_Rif], 
+[GOCM_DOCUMENTO].[Id_Elaborazione_1] AS [Id_Elaborazione_1], 
+[GOCM_DOCUMENTO].[Id_Elaborazione_2] AS [Id_Elaborazione_2], 
+[GOCM_DOCUMENTO].[Stato] AS [Stato], 
+[GOCM_DOCUMENTO].[Esito] AS [Esito], 
+[GOCM_DOCUMENTO].[Import] AS [Import], 
+[GOCM_DOCUMENTO].[Del] AS [Del], 
+[GOCM_DOCUMENTO].[Err] AS [Err], 
+[GOCM_DOCUMENTO].[Err_Note] AS [Err_Note], 
+[GOCM_DOCUMENTO].[Operazione] AS [Operazione], 
+[GOCM_DOCUMENTO].[Operazione_Mod] AS [Operazione_Mod], 
+[GOCM_DOCUMENTO].[Data_Insert] AS [Data_Insert], 
+[GOCM_DOCUMENTO].[Data_Update] AS [Data_Update], 
+[GOCM_DOCUMENTO].[Ditta] AS [Ditta], 
+[GOCM_DOCUMENTO].[Key_1] AS [Key_1], 
+[GOCM_DOCUMENTO].[Key_2] AS [Key_2], 
+[GOCM_DOCUMENTO].[Key_Rif_1] AS [Key_Rif_1], 
+[GOCM_DOCUMENTO].[Key_Rif_2] AS [Key_Rif_2], 
+[GOCM_DOCUMENTO].[TipoRec] AS [TipoRec], 
+[GOCM_DOCUMENTO].[Riga] AS [Riga], 
+[GOCM_DOCUMENTO].[CodDocumento] AS [CodDocumento], 
+[GOCM_DOCUMENTO].[DataReg] AS [DataReg], 
+[GOCM_DOCUMENTO].[DataDoc] AS [DataDoc], 
+[GOCM_DOCUMENTO].[CodSez] AS [CodSez], 
+[GOCM_DOCUMENTO].[NumDoc] AS [NumDoc], 
+[GOCM_DOCUMENTO].[NumDocOri] AS [NumDocOri], 
+[GOCM_DOCUMENTO].[TipoCF] AS [TipoCF], 
+[GOCM_DOCUMENTO].[CodCliFor] AS [CodCliFor], 
+[GOCM_DOCUMENTO].[CodPag] AS [CodPag], 
+[GOCM_DOCUMENTO].[CodDeposito] AS [CodDeposito], 
+[GOCM_DOCUMENTO].[Aliva] AS [Aliva], 
+[GOCM_DOCUMENTO].[CodCauPrestazione] AS [CodCauPrestazione], 
+[GOCM_DOCUMENTO].[DataDaCompetenzaTes] AS [DataDaCompetenzaTes], 
+[GOCM_DOCUMENTO].[DataACompetenzaTes] AS [DataACompetenzaTes], 
+[GOCM_DOCUMENTO].[DescrizioneAggCoGe] AS [DescrizioneAggCoGe], 
+[GOCM_DOCUMENTO].[CodSdi] AS [CodSdi], 
+[GOCM_DOCUMENTO].[IndicatoreTipoRiga] AS [IndicatoreTipoRiga], 
+[GOCM_DOCUMENTO].[CodArticolo] AS [CodArticolo], 
+[GOCM_DOCUMENTO].[DescrizioneArticolo] AS [DescrizioneArticolo], 
+[GOCM_DOCUMENTO].[Um] AS [Um], 
+[GOCM_DOCUMENTO].[Qta] AS [Qta], 
+[GOCM_DOCUMENTO].[Prezzo] AS [Prezzo], 
+[GOCM_DOCUMENTO].[Sc1] AS [Sc1], 
+[GOCM_DOCUMENTO].[Sc2] AS [Sc2], 
+[GOCM_DOCUMENTO].[AlivaRiga] AS [AlivaRiga], 
+[GOCM_DOCUMENTO].[ContoContropartita] AS [ContoContropartita], 
+[GOCM_DOCUMENTO].[FlgRitAcconto] AS [FlgRitAcconto], 
+[GOCM_DOCUMENTO].[FlgConIntegrativo] AS [FlgConIntegrativo], 
+[GOCM_DOCUMENTO].[DataDaCompetenzaRiga] AS [DataDaCompetenzaRiga], 
+[GOCM_DOCUMENTO].[DataACompetenzaRiga] AS [DataACompetenzaRiga], 
+[GOCM_DOCUMENTO].[DataCompetenzaIva] AS [DataCompetenzaIva], 
+[GOCM_DOCUMENTO].[IndStato] AS [IndStato]
+FROM [dbo].[GOCM_DOCUMENTO] AS [GOCM_DOCUMENTO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GORP_RITENUTEP" EntityType="Self.GORP_RITENUTEP" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[GORP_RITENUTEP].[ID] AS [ID], 
+[GORP_RITENUTEP].[Id_Operazione] AS [Id_Operazione], 
+[GORP_RITENUTEP].[Id_Operazione_Prog] AS [Id_Operazione_Prog], 
+[GORP_RITENUTEP].[Id_Operazione_Rif] AS [Id_Operazione_Rif], 
+[GORP_RITENUTEP].[Id_Elaborazione_1] AS [Id_Elaborazione_1], 
+[GORP_RITENUTEP].[Id_Elaborazione_2] AS [Id_Elaborazione_2], 
+[GORP_RITENUTEP].[Stato] AS [Stato], 
+[GORP_RITENUTEP].[Esito] AS [Esito], 
+[GORP_RITENUTEP].[Import] AS [Import], 
+[GORP_RITENUTEP].[Del] AS [Del], 
+[GORP_RITENUTEP].[Err] AS [Err], 
+[GORP_RITENUTEP].[Err_Note] AS [Err_Note], 
+[GORP_RITENUTEP].[Operazione] AS [Operazione], 
+[GORP_RITENUTEP].[Operazione_Mod] AS [Operazione_Mod], 
+[GORP_RITENUTEP].[Data_Insert] AS [Data_Insert], 
+[GORP_RITENUTEP].[Data_Update] AS [Data_Update], 
+[GORP_RITENUTEP].[Key_1] AS [Key_1], 
+[GORP_RITENUTEP].[Key_2] AS [Key_2], 
+[GORP_RITENUTEP].[Key_Rif_1] AS [Key_Rif_1], 
+[GORP_RITENUTEP].[Key_Rif_2] AS [Key_Rif_2], 
+[GORP_RITENUTEP].[ProgFlusso] AS [ProgFlusso], 
+[GORP_RITENUTEP].[TipoRec] AS [TipoRec], 
+[GORP_RITENUTEP].[Ditta] AS [Ditta], 
+[GORP_RITENUTEP].[DataReg] AS [DataReg], 
+[GORP_RITENUTEP].[NumDocOri] AS [NumDocOri], 
+[GORP_RITENUTEP].[DataDocOri] AS [DataDocOri], 
+[GORP_RITENUTEP].[CodSez] AS [CodSez], 
+[GORP_RITENUTEP].[NumDoc] AS [NumDoc], 
+[GORP_RITENUTEP].[TipoPrest] AS [TipoPrest], 
+[GORP_RITENUTEP].[CodiceCauPrest] AS [CodiceCauPrest], 
+[GORP_RITENUTEP].[CodFor] AS [CodFor], 
+[GORP_RITENUTEP].[CodTribRa] AS [CodTribRa], 
+[GORP_RITENUTEP].[CodTribRp] AS [CodTribRp], 
+[GORP_RITENUTEP].[TotDoc] AS [TotDoc], 
+[GORP_RITENUTEP].[TotIva] AS [TotIva], 
+[GORP_RITENUTEP].[IndSegno] AS [IndSegno], 
+[GORP_RITENUTEP].[IndAssRa] AS [IndAssRa], 
+[GORP_RITENUTEP].[ImportoCi] AS [ImportoCi], 
+[GORP_RITENUTEP].[ImportoPrNs] AS [ImportoPrNs], 
+[GORP_RITENUTEP].[ImponibileSoRa] AS [ImponibileSoRa], 
+[GORP_RITENUTEP].[PercRa] AS [PercRa], 
+[GORP_RITENUTEP].[ImportoRa] AS [ImportoRa], 
+[GORP_RITENUTEP].[ImportoAlRi] AS [ImportoAlRi], 
+[GORP_RITENUTEP].[ImportoEnCa] AS [ImportoEnCa], 
+[GORP_RITENUTEP].[ImportoNsRa] AS [ImportoNsRa], 
+[GORP_RITENUTEP].[ImportoFrRp] AS [ImportoFrRp], 
+[GORP_RITENUTEP].[ImponibileSoRp] AS [ImponibileSoRp], 
+[GORP_RITENUTEP].[PercRp] AS [PercRp], 
+[GORP_RITENUTEP].[PercRpCa] AS [PercRpCa], 
+[GORP_RITENUTEP].[ImportoRpPe] AS [ImportoRpPe], 
+[GORP_RITENUTEP].[ImportoRpCa] AS [ImportoRpCa], 
+[GORP_RITENUTEP].[AnnoComp770] AS [AnnoComp770], 
+[GORP_RITENUTEP].[CertRaSt] AS [CertRaSt], 
+[GORP_RITENUTEP].[DataInAtt] AS [DataInAtt], 
+[GORP_RITENUTEP].[DataFiAtt] AS [DataFiAtt], 
+[GORP_RITENUTEP].[PagTot] AS [PagTot], 
+[GORP_RITENUTEP].[DataPag] AS [DataPag], 
+[GORP_RITENUTEP].[MeseCompPag] AS [MeseCompPag], 
+[GORP_RITENUTEP].[AnnoCompPag] AS [AnnoCompPag], 
+[GORP_RITENUTEP].[ImportoPag] AS [ImportoPag], 
+[GORP_RITENUTEP].[ImportoAbb] AS [ImportoAbb], 
+[GORP_RITENUTEP].[ImportoCiPag] AS [ImportoCiPag], 
+[GORP_RITENUTEP].[ImportoPrNsPag] AS [ImportoPrNsPag], 
+[GORP_RITENUTEP].[ImponibileSoRaPag] AS [ImponibileSoRaPag], 
+[GORP_RITENUTEP].[ImportoRaPag] AS [ImportoRaPag], 
+[GORP_RITENUTEP].[ImportoAlRiPag] AS [ImportoAlRiPag], 
+[GORP_RITENUTEP].[ImportoEnCaPag] AS [ImportoEnCaPag], 
+[GORP_RITENUTEP].[ImportoNsRaPag] AS [ImportoNsRaPag], 
+[GORP_RITENUTEP].[ImportoFrRpPag] AS [ImportoFrRpPag], 
+[GORP_RITENUTEP].[ImponibileSoRpPag] AS [ImponibileSoRpPag], 
+[GORP_RITENUTEP].[ImportoRpPePag] AS [ImportoRpPePag], 
+[GORP_RITENUTEP].[ImportoRpCaPag] AS [ImportoRpCaPag], 
+[GORP_RITENUTEP].[ImportoCredImposta] AS [ImportoCredImposta], 
+[GORP_RITENUTEP].[MeseCompVersRa] AS [MeseCompVersRa], 
+[GORP_RITENUTEP].[AnnoCompVersRa] AS [AnnoCompVersRa], 
+[GORP_RITENUTEP].[TipoVers] AS [TipoVers], 
+[GORP_RITENUTEP].[CodAbiVersRa] AS [CodAbiVersRa], 
+[GORP_RITENUTEP].[CodCabVersRa] AS [CodCabVersRa], 
+[GORP_RITENUTEP].[SerieVersRa] AS [SerieVersRa], 
+[GORP_RITENUTEP].[QuietVersRa] AS [QuietVersRa], 
+[GORP_RITENUTEP].[CcPostaleVersRa] AS [CcPostaleVersRa], 
+[GORP_RITENUTEP].[MeseCompVersRp] AS [MeseCompVersRp], 
+[GORP_RITENUTEP].[AnnoCompVersRp] AS [AnnoCompVersRp], 
+[GORP_RITENUTEP].[TipoVersRp] AS [TipoVersRp], 
+[GORP_RITENUTEP].[CodAbiVersRp] AS [CodAbiVersRp], 
+[GORP_RITENUTEP].[CodCabVersRp] AS [CodCabVersRp], 
+[GORP_RITENUTEP].[SerieVersRp] AS [SerieVersRp], 
+[GORP_RITENUTEP].[QuietVersRp] AS [QuietVersRp], 
+[GORP_RITENUTEP].[CcPostaleVersRp] AS [CcPostaleVersRp], 
+[GORP_RITENUTEP].[CertRaStPag] AS [CertRaStPag], 
+[GORP_RITENUTEP].[CertRpStPag] AS [CertRpStPag]
+FROM [dbo].[GORP_RITENUTEP] AS [GORP_RITENUTEP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VW_GFAR_CLIFOR" EntityType="Self.VW_GFAR_CLIFOR" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[VW_GFAR_CLIFOR].[Ditta] AS [Ditta], 
+[VW_GFAR_CLIFOR].[TipoCF] AS [TipoCF], 
+[VW_GFAR_CLIFOR].[GoKeyCF] AS [GoKeyCF], 
+[VW_GFAR_CLIFOR].[GfKeyCF] AS [GfKeyCF], 
+[VW_GFAR_CLIFOR].[CodiceEsportazione
+CodiceEsportazione] AS [CodiceEsportazione
+CodiceEsportazione], 
+[VW_GFAR_CLIFOR].[PartIva] AS [PartIva], 
+[VW_GFAR_CLIFOR].[CodFiscale] AS [CodFiscale], 
+[VW_GFAR_CLIFOR].[FlgPrsFis] AS [FlgPrsFis], 
+[VW_GFAR_CLIFOR].[Cognome] AS [Cognome], 
+[VW_GFAR_CLIFOR].[Nome] AS [Nome], 
+[VW_GFAR_CLIFOR].[Sesso] AS [Sesso], 
+[VW_GFAR_CLIFOR].[DataNascita] AS [DataNascita], 
+[VW_GFAR_CLIFOR].[ComNascita] AS [ComNascita], 
+[VW_GFAR_CLIFOR].[ProvNascita] AS [ProvNascita], 
+[VW_GFAR_CLIFOR].[RagioneSociale] AS [RagioneSociale], 
+[VW_GFAR_CLIFOR].[Indirizzo] AS [Indirizzo], 
+[VW_GFAR_CLIFOR].[CodiceComune] AS [CodiceComune], 
+[VW_GFAR_CLIFOR].[Cap] AS [Cap], 
+[VW_GFAR_CLIFOR].[Citta] AS [Citta], 
+[VW_GFAR_CLIFOR].[Prov] AS [Prov], 
+[VW_GFAR_CLIFOR].[RagSocFisc] AS [RagSocFisc], 
+[VW_GFAR_CLIFOR].[IndFisc] AS [IndFisc], 
+[VW_GFAR_CLIFOR].[CodiceComuneFisc] AS [CodiceComuneFisc], 
+[VW_GFAR_CLIFOR].[CapFisc] AS [CapFisc], 
+[VW_GFAR_CLIFOR].[CittaFisc] AS [CittaFisc], 
+[VW_GFAR_CLIFOR].[ProvFisc] AS [ProvFisc], 
+[VW_GFAR_CLIFOR].[IndSoggRit] AS [IndSoggRit], 
+[VW_GFAR_CLIFOR].[CodiceCauPrest] AS [CodiceCauPrest], 
+[VW_GFAR_CLIFOR].[Tel1Num] AS [Tel1Num], 
+[VW_GFAR_CLIFOR].[Tel2Num] AS [Tel2Num], 
+[VW_GFAR_CLIFOR].[FaxNum] AS [FaxNum], 
+[VW_GFAR_CLIFOR].[CellNum] AS [CellNum], 
+[VW_GFAR_CLIFOR].[IndirizzoEmail] AS [IndirizzoEmail], 
+[VW_GFAR_CLIFOR].[CodPag] AS [CodPag]
+FROM [dbo].[VW_GFAR_CLIFOR] AS [VW_GFAR_CLIFOR]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

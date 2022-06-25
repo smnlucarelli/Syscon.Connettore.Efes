@@ -4,25 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AlyEfesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errori trovati durante la generazione:
-avviso 6013: Per la tabella/visualizzazione 'AlyEfes.dbo.Elaborazione' non è stata definita alcuna chiave primaria e non è possibile dedurre una chiave primaria valida. La tabella/visualizzazione è stata esclusa. Per utilizzare l'entità, è necessario esaminare lo schema, aggiungere le chiavi corrette e rimuovere i commenti.
-        <EntityType Name="Elaborazione">
-          <Property Name="Stato" Type="tinyint" />
-          <Property Name="Provenienza" Type="tinyint" />
-          <Property Name="Utente" Type="varchar" MaxLength="50" />
-          <Property Name="Data_Update" Type="datetime" />
-          <Property Name="Id" Type="uniqueidentifier" />
-        </EntityType>-->
-        <!--Errori trovati durante la generazione:
-avviso 6013: Per la tabella/visualizzazione 'AlyEfes.dbo.Elaborazione_Log' non è stata definita alcuna chiave primaria e non è possibile dedurre una chiave primaria valida. La tabella/visualizzazione è stata esclusa. Per utilizzare l'entità, è necessario esaminare lo schema, aggiungere le chiavi corrette e rimuovere i commenti.
-        <EntityType Name="Elaborazione_Log">
-          <Property Name="Stato" Type="tinyint" />
-          <Property Name="Provenienza" Type="tinyint" />
-          <Property Name="Utente" Type="varchar" MaxLength="50" />
-          <Property Name="Data_Update" Type="datetime" />
-          <Property Name="Id_Elaborazione" Type="uniqueidentifier" />
-        </EntityType>-->
+    <Schema Namespace="AlyEfesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errori trovati durante la generazione:
 avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.GFTA_CAUSALE'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
         <EntityType Name="GFTA_CAUSALE">
@@ -353,6 +335,33 @@ avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'Al
           <Property Name="CertRaStPag" Type="decimal" Precision="1" Scale="0" />
           <Property Name="CertRpStPag" Type="decimal" Precision="1" Scale="0" />
         </EntityType>
+        <EntityType Name="SYS_MENU">
+          <Key>
+            <PropertyRef Name="SYS_ID" />
+          </Key>
+          <Property Name="SYS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SYS_AREA" Type="varchar" MaxLength="100" />
+          <Property Name="SYS_APPLICAZIONE" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="SYS_PARAMETRI">
+          <Key>
+            <PropertyRef Name="SYS_PARAMETRO" />
+          </Key>
+          <Property Name="SYS_PARAMETRO" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SYS_VALORE" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SYS_UTENTE">
+          <Key>
+            <PropertyRef Name="SYS_USERNAME" />
+          </Key>
+          <Property Name="SYS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SYS_USERNAME" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="SYS_PASSWORD" Type="nvarchar" MaxLength="77" Nullable="false" />
+          <Property Name="SYS_DESCRIZIONE" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="SYS_EMAIL" Type="varchar" MaxLength="64" Nullable="false" />
+          <Property Name="SYS_ADMIN" Type="int" Nullable="false" />
+          <Property Name="SYS_FLGATTIVO" Type="int" Nullable="false" />
+        </EntityType>
         <!--Errori trovati durante la generazione:
 avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'AlyEfes.dbo.VW_GFAR_CLIFOR'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
         <EntityType Name="VW_GFAR_CLIFOR">
@@ -410,6 +419,9 @@ avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'Al
         <Function Name="zSP_CANCELLA_TABELLE_GF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="zSP_GOCG_CliFor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="AlyEfesModelStoreContainer">
+          <EntitySet Name="SYS_MENU" EntityType="Self.SYS_MENU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SYS_PARAMETRI" EntityType="Self.SYS_PARAMETRI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SYS_UTENTE" EntityType="Self.SYS_UTENTE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GFTA_CAUSALE" EntityType="Self.GFTA_CAUSALE" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
 [GFTA_CAUSALE].[Codice] AS [Codice], 
@@ -734,8 +746,7 @@ CodiceEsportazione],
 FROM [dbo].[VW_GFAR_CLIFOR] AS [VW_GFAR_CLIFOR]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AlyEfesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1114,7 +1125,37 @@ FROM [dbo].[VW_GFAR_CLIFOR] AS [VW_GFAR_CLIFOR]</DefiningQuery>
           <FunctionImport Name="SP_GFTA_STATOESTERO" />
           <FunctionImport Name="zSP_CANCELLA_TABELLE_GF" />
           <FunctionImport Name="zSP_GOCG_CliFor" />
+          <EntitySet Name="SYS_MENU" EntityType="AlyEfesModel.SYS_MENU" />
+          <EntitySet Name="SYS_PARAMETRI" EntityType="AlyEfesModel.SYS_PARAMETRI" />
+          <EntitySet Name="SYS_UTENTE" EntityType="AlyEfesModel.SYS_UTENTE" />
         </EntityContainer>
+        <EntityType Name="SYS_MENU">
+          <Key>
+            <PropertyRef Name="SYS_ID" />
+          </Key>
+          <Property Name="SYS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SYS_AREA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SYS_APPLICAZIONE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SYS_PARAMETRI">
+          <Key>
+            <PropertyRef Name="SYS_PARAMETRO" />
+          </Key>
+          <Property Name="SYS_PARAMETRO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SYS_VALORE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SYS_UTENTE">
+          <Key>
+            <PropertyRef Name="SYS_USERNAME" />
+          </Key>
+          <Property Name="SYS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SYS_USERNAME" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SYS_PASSWORD" Type="String" Nullable="false" MaxLength="77" FixedLength="false" Unicode="true" />
+          <Property Name="SYS_DESCRIZIONE" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SYS_EMAIL" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="SYS_ADMIN" Type="Int32" Nullable="false" />
+          <Property Name="SYS_FLGATTIVO" Type="Int32" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1476,6 +1517,36 @@ FROM [dbo].[VW_GFAR_CLIFOR] AS [VW_GFAR_CLIFOR]</DefiningQuery>
           <FunctionImportMapping FunctionImportName="SP_GFTA_STATOESTERO" FunctionName="AlyEfesModel.Store.SP_GFTA_STATOESTERO" />
           <FunctionImportMapping FunctionImportName="zSP_CANCELLA_TABELLE_GF" FunctionName="AlyEfesModel.Store.zSP_CANCELLA_TABELLE_GF" />
           <FunctionImportMapping FunctionImportName="zSP_GOCG_CliFor" FunctionName="AlyEfesModel.Store.zSP_GOCG_CliFor" />
+          <EntitySetMapping Name="SYS_MENU">
+            <EntityTypeMapping TypeName="AlyEfesModel.SYS_MENU">
+              <MappingFragment StoreEntitySet="SYS_MENU">
+                <ScalarProperty Name="SYS_APPLICAZIONE" ColumnName="SYS_APPLICAZIONE" />
+                <ScalarProperty Name="SYS_AREA" ColumnName="SYS_AREA" />
+                <ScalarProperty Name="SYS_ID" ColumnName="SYS_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SYS_PARAMETRI">
+            <EntityTypeMapping TypeName="AlyEfesModel.SYS_PARAMETRI">
+              <MappingFragment StoreEntitySet="SYS_PARAMETRI">
+                <ScalarProperty Name="SYS_VALORE" ColumnName="SYS_VALORE" />
+                <ScalarProperty Name="SYS_PARAMETRO" ColumnName="SYS_PARAMETRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SYS_UTENTE">
+            <EntityTypeMapping TypeName="AlyEfesModel.SYS_UTENTE">
+              <MappingFragment StoreEntitySet="SYS_UTENTE">
+                <ScalarProperty Name="SYS_FLGATTIVO" ColumnName="SYS_FLGATTIVO" />
+                <ScalarProperty Name="SYS_ADMIN" ColumnName="SYS_ADMIN" />
+                <ScalarProperty Name="SYS_EMAIL" ColumnName="SYS_EMAIL" />
+                <ScalarProperty Name="SYS_DESCRIZIONE" ColumnName="SYS_DESCRIZIONE" />
+                <ScalarProperty Name="SYS_PASSWORD" ColumnName="SYS_PASSWORD" />
+                <ScalarProperty Name="SYS_USERNAME" ColumnName="SYS_USERNAME" />
+                <ScalarProperty Name="SYS_ID" ColumnName="SYS_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

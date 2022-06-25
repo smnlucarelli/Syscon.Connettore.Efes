@@ -40,6 +40,9 @@ namespace sys_connettore_database.Model
         public DbSet<GOCM_DOCUMENTO> GOCM_DOCUMENTO { get; set; }
         public DbSet<GORP_RITENUTEP> GORP_RITENUTEP { get; set; }
         public DbSet<VW_GFAR_CLIFOR> VW_GFAR_CLIFOR { get; set; }
+        public DbSet<SYS_MENU> SYS_MENU { get; set; }
+        public DbSet<SYS_PARAMETRI> SYS_PARAMETRI { get; set; }
+        public DbSet<SYS_UTENTE> SYS_UTENTE { get; set; }
     
         public virtual int SP_CreaRecord()
         {

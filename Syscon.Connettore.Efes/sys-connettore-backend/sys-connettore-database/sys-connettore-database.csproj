@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\sys-connettore-backend\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\..\Bitbucket\sys-app\sys-webapi\sys-dbcontext\bin\Release\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\..\Bitbucket\sys-app\sys-webapi\sys-dbcontext\bin\Release\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\sys-connettore-backend\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -113,6 +116,15 @@
     <Compile Include="Model\GORP_RITENUTEP.cs">
       <DependentUpon>AlyEfesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\SYS_MENU.cs">
+      <DependentUpon>AlyEfesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SYS_PARAMETRI.cs">
+      <DependentUpon>AlyEfesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SYS_UTENTE.cs">
+      <DependentUpon>AlyEfesModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\VW_GFAR_CLIFOR.cs">
       <DependentUpon>AlyEfesModel.tt</DependentUpon>
     </Compile>
@@ -147,6 +159,9 @@
       <DependentUpon>AlyEfesModel.edmx</DependentUpon>
       <LastGenOutput>AlyEfesModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

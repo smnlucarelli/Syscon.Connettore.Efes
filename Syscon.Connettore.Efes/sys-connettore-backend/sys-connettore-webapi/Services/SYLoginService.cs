@@ -31,9 +31,9 @@ namespace sys_connettore_webapi.Services
                 bool login = false;
                 SYS_UTENTI_EXT user = new SYS_UTENTI_EXT();
 
-                using (var ctx = new ServizioEntities())
+                using (var ctx = new AlyEfesEntities())
                 {
-                    user = ctx.SYS_UTENTI.Where(x => x.SYS_USERNAME.Trim() == username)
+                    user = ctx.SYS_UTENTE.Where(x => x.SYS_USERNAME.Trim() == username)
                                          .Select(x => new SYS_UTENTI_EXT
                                          {
                                              SYS_ID = x.SYS_ID,

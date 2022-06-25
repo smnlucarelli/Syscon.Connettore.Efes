@@ -7,10 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using sys_connettore_webapi.Services.Import;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static sys_connettore_webapi.Services.Import.ISYImportPNService;
 
 namespace sys_connettore_webapi
 {
@@ -28,9 +30,22 @@ namespace sys_connettore_webapi
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
+
+            services.AddSingleton<ISYImportPNService, SYImportPNService>();
+
+
+
+
+
+
+            services.AddSwaggerGen(options =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "sys_connettore_webapi", Version = "v1" });
+                options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "Syscon Service API",
+                    Version = "v2",
+                    Description = "",
+                });
             });
         }
 
@@ -40,20 +55,19 @@ namespace sys_connettore_webapi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "sys_connettore_webapi v1"));
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
+            app.UseCors(options => options.AllowAnyHeader()
+                                          .AllowAnyMethod()
+                                          .AllowAnyOrigin());
 
             app.UseAuthorization();
+            app.UseEndpoints(endpoints => endpoints.MapControllers());
+            app.UseSwagger();
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "Syscon Services"));
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
         }
     }
 }
